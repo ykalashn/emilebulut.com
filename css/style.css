@@ -65,6 +65,7 @@ p {
 
 html{
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -131,9 +132,6 @@ a:hover, a:active, a:focus {
   height:3.5em;
 }
 
-.smooth {
-		scroll-behavior: smooth;
-}
 /*---------------------------------------
     Preloader section
 -----------------------------------------*/
