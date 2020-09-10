@@ -38,7 +38,7 @@ h3 {
 }
 
 h4 {
-  color: #666;
+  color:#E4DCD2;
   font-size: 12px;
   font-weight: normal;
   letter-spacing: 2px;
@@ -129,6 +129,10 @@ a:hover, a:active, a:focus {
 	float:left;
 	width:3.5em;
   height:3.5em;
+}
+
+.smooth {
+		scroll-behavior: smooth;
 }
 /*---------------------------------------
     Preloader section
@@ -307,7 +311,7 @@ a:hover, a:active, a:focus {
 }
 
 #home h4 {
-  color: #bfba55;
+  color: #E4DCD2;
 }
 
 #home .btn {
@@ -745,7 +749,6 @@ footer .footer-copyright {
 	}
 	.main-home {
 	  background: url("https://i.ibb.co/gS7yS5z/emilll.jpg") no-repeat;
-	  height: 100vh;
 	}
 }
 
