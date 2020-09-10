@@ -12,6 +12,8 @@
 <title>Emil E. Bulut</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
@@ -29,8 +31,19 @@
 </div>
 
 <!-- Navigation section  -->
+<!--Navigation bar-->
+<div id="nav-placeholder">
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<!-- <div class="navbar navbar-default navbar-static-top" role="navigation">
      <div class="container">
 
           <div class="navbar-header">
@@ -51,7 +64,7 @@
           </div>
 
   </div>
-</div>
+</div> -->
 
 <!-- Home Section -->
 
