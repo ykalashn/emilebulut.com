@@ -4,7 +4,7 @@
 }
 body {
 		background: #ffffff;
-    font-family: 'Eldorado Text Light', serif;
+    font-family: 'Eldorado Text Light', 'Merriweather', serif;
     font-style: normal;
 		font-weight: 300;
     overflow-x: hidden;
@@ -16,7 +16,7 @@ body {
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Eldorado Text Light', serif;
+  font-family: 'Eldorado Text Light', 'Merriweather', serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -371,7 +371,7 @@ a.active {
   border: 2px solid #ffffff;
   border-radius: 100px;
   color: #444;
-  font-family: 'Eldorado Text Light', serif;
+  font-family: 'Eldorado Text Light', 'Merriweather', serif;
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 2px;
