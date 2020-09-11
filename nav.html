@@ -1,34 +1,21 @@
-<!-- <div class="navbar navbar-default navbar-static-top" role="navigation">
-     <div class="container">
-          <a href="index.html"><img class="logo" src="images/logo.png"></a>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+if (prevScrollpos > currentScrollPos) {
+  document.getElementById("navbar").style.top = "0";
+} else {
+  document.getElementById("navbar").style.top = "-50px";
+}
+prevScrollpos = currentScrollPos;
+}
+</script>
 
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-          </div>
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#footer-placeholder">Contact</a></li>
-               </ul>
-          </div>
-
-  </div>
-</div> -->
-<!-- header -->
-<header class="navbar-fixed-top">
+<header id="navbar" class="navbar-fixed-top">
     <nav>
         <ul>
             <li><a href="https://emilbulut.fi/">Home</a></li>
             <li><a href="/blog.html">Blog</a></li>
-            <!-- <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li> -->
         </ul>
     </nav>
 </header>
-<!-- ./header -->
