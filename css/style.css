@@ -721,13 +721,13 @@ a.active {
    Works section
 -----------------------------------------*/
 
-#works h4 {
+#blog h4 {
   color: red;
 	font-size: 16px;
 	margin-block-start: 1em;
 }
 
-#works h2 {
+#blog h2 {
 	margin-block-start: 0em;
 }
 .post-preview > a {
@@ -914,7 +914,7 @@ footer .footer-copyright {
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   #about .col-md-6 img {
