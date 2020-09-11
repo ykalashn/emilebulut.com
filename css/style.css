@@ -713,13 +713,6 @@ a.active {
   padding-top: 16px;
 }
 
-#blog-single-post .col-md-offset-1 {
-	margin-left:21%;
-}
-#blog-single-post .col-md-10 {
-	width: 58%;
-}
-
 /*---------------------------------------
    Footer section
 -----------------------------------------*/
@@ -823,6 +816,12 @@ footer .footer-copyright {
 @media (min-width: 981px) {
 	.main-home {
 	  background: url("https://i.ibb.co/DgKVgTY/emil-jpg.jpg") no-repeat;
+	}
+	#blog-single-post .col-md-offset-1 {
+		margin-left:21%;
+	}
+	#blog-single-post .col-md-10 {
+		width: 58%;
 	}
 }
 
