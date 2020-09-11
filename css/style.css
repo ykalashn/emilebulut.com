@@ -121,7 +121,6 @@ a:hover, a:active, a:focus {
 }
 
 .parallax-section {
-  background-attachment: fixed !important;
   background-size: cover !important;
   overflow: hidden;
 }
@@ -823,6 +822,9 @@ footer .footer-copyright {
 		padding-right:15px;
 		padding-left:15px
 	}
+	.parallax-section {
+		background-attachment: fixed !important;
+	}
 }
 
 @media (max-width: 980px) {
@@ -839,8 +841,8 @@ footer .footer-copyright {
 	}
 	.main-home {
 	  background: url("https://i.ibb.co/8xRpCs0/home-image.jpg") no-repeat;
-
 	}
+
 }
 
 
