@@ -453,7 +453,7 @@ a.active {
 }
 .blog-page .blog-text span {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .blog-page .blog-text span.comment {
   float: right;
@@ -467,7 +467,7 @@ a.active {
 }
 .blog-page .blog-text h3 {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   line-height: 1.5;
 }
 .blog-page .blog-text h3 a {
@@ -599,6 +599,10 @@ a.active {
 
 .blog-page .btn {
   border-radius: 50px;
+}
+
+.blog-page .blog-post-format {
+  padding-bottom: 0px;
 }
 
 .blog-author {
