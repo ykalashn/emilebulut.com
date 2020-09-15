@@ -721,10 +721,6 @@ a.active {
   padding-top: 16px;
 }
 
-/*---------------------------------------
-   Works section
------------------------------------------*/
-
 #blog h4 {
   color: red;
 	font-size: 16px;
@@ -772,6 +768,20 @@ a.active {
     font-size: 36px;
   }
 }
+
+
+/*---------------------------------------
+   Works section
+-----------------------------------------*/
+#works .title-h1 {
+  font-size: 6rem;
+}
+#works .card-title {
+  font-size: 3.125em;
+}
+
+
+
 
 /*---------------------------------------
    Footer section
