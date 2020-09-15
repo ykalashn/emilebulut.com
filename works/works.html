@@ -12,12 +12,57 @@
     <title>Works - Emil E. Bulut</title>
   </head>
   <body>
-    <div id="works" class="container-fluid" style="overflow: hidden;"">
+    <!-- PRE LOADER -->
 
+    <!-- <div class="preloader">
+         <div class="sk-spinner sk-spinner-wordpress">
+              <span class="sk-inner-circle"></span>
+         </div>
+    </div> -->
+
+    <!-- <header id="navbar" class="navbar fixed-top justify-content-center">
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="/works/works.html">Works</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <div id="works" class="container-fluid h-auto align-items-center" style="overflow: hidden;">
+      <div class="row">
+        <div class="col-12 col-xl-10 ml-xl-5">
+          <div id="menu-overlay">
+                <nav class="nav flex-column justify-content-center title-h1 ml-md-5">
+                  <a class="nav-link" href="../" target="_blank">Home</a>
+                  <a class="nav-link" href="#" target="_blank">Works</a>
+                  <a class="nav-link" href="../blog.html" target="_blank">Blog</a>
+                </nav>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="menu d-flex justify-content-end">
+                <div id="toggleIcon" onclick="menuToggle()">
+                    <h3><span>Menu</span></h3>
+                </div>
+          </div>
+              <script type="text/javascript">
+                function menuToggle(){
+                  var nav = document.getElementById('menu-overlay');
+                  nav.classList.toggle('active');
+                  var nav = document.getElementById('toggleIcon');
+                  nav.classList.toggle('active');
+
+                }
+              </script>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- WORKS TEXT -->
 
-      <div style="height: 65vh;" class="row vh-65 justify-content-center align-items-center">
-        <div class="col mt-5 offset-md-2 offset-xl-2">
+      <div style="height: 70vh;" class="row ml-xl-5 justify-content-center align-items-center">
+        <div class="col mt-5 offset-md-2 offset-xl-1 p-md-0">
           <h1 class="title-h1">Works</h1>
         </div>
       </div>
@@ -26,18 +71,17 @@
 
       <div class="row justify-content-xl-center">
         <div class="col-12 mb-5 col-md-6 offset-md-2 col-lg-6 col-xl-4 mt-md-5 p-0 mx-xl-5">
-          <div class="card border-0">
-          <img src="https://i.ibb.co/SfdG09K/2.jpg" class="card-img-top" alt="...">
+          <a href="../overtaking.html" style="color: black;"><div class="card border-0">
+          <img src="https://i.ibb.co/SfdG09K/2.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <h5 class="card-title">Overtaking</h5>
+              <p class="card-text">Poem</p>
             </div>
-          </div>
+          </div></a>
         </div>
         <div class="col-12 mb-5 col-md-6 offset-md-4 col-lg-6 offset-xl-0 col-xl-4 p-0 mt-5 mt-xl-n3 mx-xl-5">
           <div class="card border-0">
-          <img src="https://i.ibb.co/SfdG09K/2.jpg" class="card-img-top" alt="...">
+          <img src="https://i.ibb.co/SfdG09K/2.jpg" class="card-img-top rounded-0" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
@@ -47,8 +91,8 @@
         </div>
         <div class="w-100"></div>
         <div class="col-12 mb-5 col-md-6 offset-md-2 col-lg-6 col-xl-4 mt-5 p-0 mx-xl-5">
-          <div class="card border-0">
-          <img src="https://i.ibb.co/SfdG09K/2.jpg" class="card-img-top" alt="...">
+          <div class="card border-0 ">
+          <img src="https://i.ibb.co/SfdG09K/2.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
@@ -58,7 +102,7 @@
         </div>
         <div class="col-12 col-md-6 offset-md-4 col-lg-6 offset-xl-0 col-xl-4 p-0 mt-5 mt-xl-n3 mx-xl-5">
           <div class="card border-0">
-          <img src="https://i.ibb.co/SfdG09K/2.jpg" class="card-img-top" alt="...">
+          <img src="https://i.ibb.co/SfdG09K/2.jpg" class="card-img-top rounded-0" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
@@ -75,7 +119,10 @@
 
       </div>
 
-    </div>
+</div>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -2,6 +2,18 @@
   font-family: 'pica';
   src: url(pica.woff2);
 }
+@font-face {
+    font-family: 'argesta_displayregular';
+    src: url('../fonts/argestadisplay-regular-webfont.eot');
+    src: url('../fonts/argestadisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/argestadisplay-regular-webfont.woff2') format('woff2'),
+         url('../fonts/argestadisplay-regular-webfont.woff') format('woff'),
+         url('../fonts/argestadisplay-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
 		background: #ffffff;
     font-family: 'pica', 'Merriweather', serif;
@@ -200,67 +212,62 @@ a:hover, a:active, a:focus {
     Main Navigation
 -----------------------------------------*/
 
-/* .navbar-default {
-    background: #ffffff;
-    margin: 0 !important;
-    padding: 18px 0;
+/* Menu section */
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  display: flex;
+  transform: translateX(-100%);
+  overflow-y: auto;
+  transition: 0.5s;
+  z-index: 99;
+}
+#menu-overlay nav {
+  position: relative;
 }
 
-.navbar-default .navbar-brand {
-  color: #555;
-  font-family: 'pica', serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin: 0;
+#menu-overlay.active {
+  transform: translateX(0);
 }
 
-.navbar-default .navbar-nav li a {
-    color: #777;
-    font-size: 16px;
-    letter-spacing: 1px;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    padding-right: 22px;
-    padding-left: 22px;
+#menu-overlay nav a {
+  color: white;
+}
+#menu-overlay nav a:hover {
+  color: white;
 }
 
-.navbar-default .navbar-nav > li a:hover {
-    color: #bfba55 !important;
+.menu h3:hover {
+  color: gray;
+}
+#toggleIcon {
+  position: fixed;
+  width: auto;
+  z-index: 100;
+  cursor: pointer;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #606066;
-    background-color: transparent;
+#toggleIcon.active span {
+  display: none;
+}
+#toggleIcon.active h3 {
+  color: white;
 }
 
-.navbar-default .navbar-nav li a:hover,
- .navbar-default .navbar-nav .active > a {
-    color: #bfba55;
-  }
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #bfba55;
-    background-color: transparent;
+#toggleIcon.active>h3:after {
+  content: 'Close';
 }
 
-.navbar-default .navbar-toggle {
-     border: none;
-     padding-top: 10px;
-  }
+#toggleIcon.active>h3:hover {
+  color: grey;
+}
 
-.navbar-default .navbar-toggle .icon-bar {
-    background: #bfba55;
-    border-color: transparent;
-  }
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: transparent;
-} */
+/* Old Header */
 
 header {
     text-align: center;
@@ -482,52 +489,6 @@ a.active {
   color: black;
 }
 
-/*---------------------------------------
-   Contact section
------------------------------------------*/
-
-#contact .col-md-4 {
-  padding-left: 0px;
-}
-
-#contact .col-md-12 {
-  padding-left: 0;
-}
-
-#contact form {
-  padding-top: 32px;
-}
-
-#contact .form-control {
-  border: 2px solid #f0f0f0;
-  box-shadow: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transition: all 0.4s ease-in-out;
-}
-
-#contact .form-control:hover {
-  border-color: #555;
-}
-
-#contact input {
-  height: 50px;
-}
-
-#contact input[type="submit"] {
-  background: #bfba55;
-  border-radius: 100px;
-  border: none;
-  color: #ffffff;
-  font-weight: bold;
-  transition: all 0.4s ease-in-out;
-}
-
-#contact input[type="submit"]:hover {
-  background: #333;
-}
-
-
 
 /*---------------------------------------
    Blog section
@@ -598,12 +559,6 @@ a.active {
   margin-top: 26px;
   transition: all 0.4s ease-in-out;
 }
-
-/* .blog-post-des .btn:hover {
-  background: #000000;
-  border-color: transparent;
-  color: #ffffff;
-} */
 
 .blog-page .btn {
   border-radius: 50px;
@@ -775,14 +730,14 @@ a.active {
 -----------------------------------------*/
 #works .title-h1 {
   font-size: 6rem;
+  font-family: 'argesta_displayregular';
 }
 #works .card-title {
   font-size: 3.125em;
+  font-family: 'argesta_displayregular';
 }
 
-
-
-
+/* transform:translateY(100%) */
 /*---------------------------------------
    Footer section
 -----------------------------------------*/
@@ -888,12 +843,6 @@ footer .footer-copyright {
 	.main-home {
 	  background: url("https://i.ibb.co/DgKVgTY/emil-jpg.jpg") no-repeat;
 	}
-	/* #blog-single-post .col-md-offset-1 {
-		margin-left:21%;
-	}
-	#blog-single-post .col-md-10 {
-		width: 58%;
-	} */
 }
 
 @media (max-width: 980px) {
