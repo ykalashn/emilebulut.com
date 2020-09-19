@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'glovis';
+    src: url(../fonts/glovis-webfont.woff2) format('woff2');
+  }
+@font-face {
+      font-family: 'argesta_displayregular';
+      src: url('../fonts/argestadisplay-regular-webfont.eot');
+      src: url('../fonts/argestadisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/argestadisplay-regular-webfont.woff2') format('woff2'),
+           url('../fonts/argestadisplay-regular-webfont.woff') format('woff'),
+           url('../fonts/argestadisplay-regular-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+/* TYPOGRAPHY */
+
+.nav-link {
+    font-family: 'argesta_displayregular';
+    font-size: 1.4em;
+}
+
+.logo {
+    font-family: 'argesta_displayregular';
+    font-size: 1.8em;
+}
+
+/* MENU  */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    pointer-events: none;
+    overflow-y: auto;
+    transition: opacity 0.3s linear;
+    z-index: 99;
+}
+
+.navigation .row {
+    padding-top: calc(50vh - 196px/2);
+}
+
+/* HEADER */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    pointer-events: none;
+    transition: opacity 0.3s linear;
+    z-index: 100;
+    height: 32px;
+    padding-top: 4vh;
+}
+
+#header .container {
+    padding: 0 4vw;
+    height: 32px;
+    position: relative;
+    margin: 0 auto;
+}
+#toggleIcon {
+    position: relative;
+    background: none;
+    border: none;
+}
+
+/* Main */
+
+
+main {
+    margin-top: calc(16vh + 32px + 4vh);
+
+.col-secondary {
+    margin-top: 16vw;
+}
+
+#content .container-fluid {
+    padding: 0 4vw;
+    position: relative;
+    margin: 0 auto;
+}

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'pica';
-  src: url(pica.woff2);
+  font-family: 'glovis';
+  src: url(fonts/glocis-webfont.woff2) format('woff2');
 }
 @font-face {
     font-family: 'argesta_displayregular';
@@ -16,7 +16,7 @@
 
 body {
 		background: #ffffff;
-    font-family: 'pica', 'Merriweather', serif;
+    font-family: 'argesta_displayregular', 'Merriweather', serif;
     font-style: normal;
 		font-weight: 300;
     overflow-x: hidden;
@@ -28,9 +28,8 @@ body {
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'pica', 'Merriweather', serif;
+  /* font-family: 'argesta_displayregular', 'Merriweather', serif; */
   font-style: normal;
-  font-weight: bold;
   letter-spacing: 0.5px;
 }
 
@@ -143,11 +142,6 @@ a:hover, a:active, a:focus {
   overflow: hidden;
 }
 
-.logo {
-	float:left;
-	width:3.5em;
-  height:3.5em;
-}
 
 /*---------------------------------------
     Preloader section
@@ -382,7 +376,7 @@ a.active {
   border: 2px solid #ffffff;
   border-radius: 100px;
   color: #444;
-  font-family: 'pica', 'Merriweather', serif;
+  font-family: 'glovis', 'Merriweather', serif;
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -421,6 +415,7 @@ a.active {
   padding-top: 12px;
 }
 
+/* Paralax */
 
 
 /*---------------------------------------
@@ -729,14 +724,31 @@ a.active {
    Works section
 -----------------------------------------*/
 #works .title-h1 {
-  font-size: 6rem;
-  font-family: 'argesta_displayregular';
-}
-#works .card-title {
-  font-size: 3.125em;
+  font-size: 10vh;
   font-family: 'argesta_displayregular';
 }
 
+#works .card-title {
+  font-size: 4vh;
+  font-family: 'argesta_displayregular';
+}
+
+#works .card-text {
+  font-style: italic;
+  color: #323232;
+  padding: 0 3px;
+  font-size: 2.3vh;
+}
+
+#works .card-body span {
+  background-color: #E1E1E1;
+}
+
+#works .card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
 /* transform:translateY(100%) */
 /*---------------------------------------
    Footer section
