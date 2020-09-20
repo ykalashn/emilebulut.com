@@ -1,0 +1,42 @@
+<div id="navigation">
+    <div class="menu menu-header">
+      <div  class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-auto align-self-center">
+              <nav class="nav flex-column">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../works/works.html">Works</a>
+                <a class="nav-link" href="../blog.html">Blog</a>
+              </nav>
+          </div>
+        </div>
+        
+      </div>
+      <div class="menu-bottom">
+
+      </div>
+    </div>
+  </div>
+  <div id="header" class="site-header">
+    <div class="container-fluid">
+    <header class="row justify-content-between m-0">
+      <div class="col-auto p-0 align-self-center invisible">
+        <a href="./"><h1 class="logo">Emil E. Bulut</h1></a>
+      </div>
+      <nav class="col-auto align-self-center">
+          <button id="toggleIcon" onclick="menuToggle()" type="button" class="btn btn-link">
+            <span class="bi bi-list"></span>
+          </button>
+        <script type="text/javascript">
+          function menuToggle(){
+            var nav = document.getElementById('navigation');
+            nav.classList.toggle('active');
+            var nav = document.getElementById('toggleIcon');
+            nav.classList.toggle('active');
+    
+          }
+        </script>
+      </nav>
+    </header>
+    </div>
+  </div>
