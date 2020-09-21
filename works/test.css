@@ -18,8 +18,8 @@
   }
 
 :root {
-    --height-of-header: calc(20vh + 32px + 4vh);
-    --height-of-header-mobile: calc(3vh + 32px + 4vh);
+    --height-of-header: calc(20vh + 54px + 4vh);
+    --height-of-header-mobile: calc(3vh + 54px + 4vh);
     --height-hero-img: 38vh;
     --height-hero-img-mobile: 50vh;
   }
@@ -31,12 +31,16 @@ html {
     scroll-behavior: smooth;
 }
 
-/* TYPOGRAPHY */
-
-.nav-link {
-    font-family: 'Freig';
-    font-size: 8vh;
+body {
+    overflow-x: hidden;
 }
+
+body::selection {
+    color: white;
+    background-color: black;
+}
+
+/* TYPOGRAPHY */
 
 .logo {
     font-family: 'argesta_displayregular';
@@ -56,6 +60,7 @@ html {
 .card-body {
     margin-top: 
 }
+
 .card-title {
     font-family: 'Freig';
     font-size: 3.2vh;
@@ -67,6 +72,14 @@ html {
     font-weight: 200;
     font-size: 2vh;
 }
+
+a {
+    color: black;
+}
+a:hover {
+    color: #757575;
+    text-decoration: none;
+}
 /* MENU  */
 
 #navigation {
@@ -76,12 +89,12 @@ html {
     bottom: 0;
     right: 0;
     padding: 0;
-    pointer-events: none;
     overflow-y: auto;
+    pointer-events: none;
     transition: opacity 0.3s linear;
     opacity: 0;
     z-index: 99;
-    background-color: #945e55;
+    background-color: black;
     overflow: hidden;
 }
 
@@ -90,26 +103,33 @@ html {
     
 }
 
-#toggleIcon.btn {
-    background-color: transparent;
-    padding: 0;
-    border: 0;
-}
-
 #navigation nav {
   position: relative;
 }
 
 #navigation.active {
   opacity: 1;
+  pointer-events: all;
 }
 
-#navigation nav a {
+#navigation .nav a {
+  font-size: 9vh;
+  font-family: 'Freig';
   color: white;
+  font-weight: bold;
+  padding: 0;
+  transition: all 0.35s linear;
+  
 }
-#navigation nav a:hover {
-  color: white;
+#navigation nav:hover > .nav-link {
+    color: #757575;
 }
+#navigation nav .nav-link:hover {
+    margin-left: 8%;
+    color: white;
+
+}
+
 
 /* HEADER */
 
@@ -122,50 +142,56 @@ html {
     padding: 0;
     transition: opacity 0.3s linear;
     z-index: 100;
-    height: 32px;
-    padding-top: 4vh;
+    height: 64px;
+    margin-top: 4vh;
 }
 
 #header .container-fluid {
-    height: 32px;
+    height: 64px;
     position: relative;
     margin: 0 auto;
 }
 
-.bi {
-    display: inline-block;
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-    background-color: transparent;
+#header .btn {
     padding: 0;
-    border: 0;
-    line-height: 1;
-    transition: background-color 1.5s;
+    line-height: 0.8;
+    border: none;
+}
 
-  }
-  
-.bi-list::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('data:image/svg+xml,<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
-  }
+.logo {
+      width: 64px;
+      height: 64px;
+}
+
+#header .btn-link {
+    color: black;
+    font-size: 50px;
+    transition: all 0.25s ease-in-out;
+}
+
+#header .btn-link:hover {
+    color: #757575;
+}
+#header .btn-link.active {
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+#header .btn-link.active:hover {
+    color: white;
+    opacity: 0.5;
+}
 
 /* Main */
 
 
 main {
-    
     margin-top: var(--height-of-header);
     overflow-y: hidden;
 } 
 
 .container-fluid {
     padding: 0 6vw;
+    overflow-x: hidden;
 }
 
 .main-content .container-fluid {
@@ -204,9 +230,7 @@ main {
 
 @media (max-width: 991.99px) {
     .col-prim {
-        margin-top: calc((100vh - var(--height-of-header) - var(--height-hero-img) - 100px - 6em - 6vh)/2);
-        /* margin-bottom: 9vh;   */
-        
+        margin-top: calc((95vh - var(--height-of-header) - var(--height-hero-img) - 100px - 6em - 6vh)/2);        
     }
 
     .all-works .card.left {
