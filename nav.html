@@ -1,21 +1,70 @@
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-if (prevScrollpos > currentScrollPos) {
-  document.getElementById("navbar").style.top = "0";
-} else {
-  document.getElementById("navbar").style.top = "-50px";
-}
-prevScrollpos = currentScrollPos;
-}
-</script>
+
+<style>
+    /* HEADER */
+
+    header {
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      height: 65px;
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav ul {
+      display: inline-block;
+      padding-left: 0;
+      list-style: none;
+      padding: 20px;
+      margin-bottom: 0;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 10px;
+      margin-top: 20px;
+    }
+
+    nav li a {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff;
+      font-size: 11px;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 300;
+    }
+
+    .bg-nav ul {
+      padding: 10px;
+    }
+
+    a:focus {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      opacity: 0.35;
+      text-decoration: none;
+    }
+
+    a.active {
+      opacity: 0.35;
+      text-decoration: none;
+
+    }
+</style>
 
 <header id="navbar" class="navbar-fixed-top">
     <nav>
         <ul>
             <li><a href="../">Home</a></li>
-            <li><a href="/works/wor.html">Works</a></li>
+            <li><a href="/works/works.html">Works</a></li>
             <li><a href="/blog.html">Blog</a></li>
         </ul>
     </nav>

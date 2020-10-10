@@ -28,12 +28,6 @@ html, body {
     color: #e7e4d4;
 }
 
-/* body {
-    background-image: url(../images/modern-affliction-guvnhd3hbxw-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}  */
 /* HEADER */
 
 header {
@@ -102,15 +96,17 @@ a.active {
 #hero-title .title {
     font-size: calc(13vw + 5vh);
     line-height: 0.73;
-    opacity: 0.5;
+    opacity: 0.35;
     -webkit-transition: all .5s;
     transition: all 0.5s;
+    font-family: 'Freig-I', serif;
+
 }
 
 .dash {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
-    font-size: calc(10vh);
+    font-size: 10vh;
 }
 
 /* content */
@@ -119,12 +115,36 @@ a.active {
     min-height: 35vw;
 }
 
+#content .img-scale {
+    overflow: hidden;
+}
+#content a {
+    text-decoration: none;
+    color: white;
+}
+
+#content a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#content a img {
+    transition: all 0.35s linear;
+    opacity: 0.99;
+}
+
+#content a:hover img {
+    opacity: 0.6;
+    transform: scale(1.03);
+}
+
 .right-card, .left-card {
     margin-bottom: calc(100vw/16*1.6);
 }
 
 .cover {
     object-fit: cover;
+    object-position: center;
 }
 
 .work-img {
@@ -136,7 +156,7 @@ a.active {
 }
 
 .work-img-title h2 {
-    font-size: 4vh;
+    font-size: 5vh;
 }
 
 .work-img-title .text-sec {
@@ -172,8 +192,8 @@ a.active {
 
 @media (max-width: 767.98px) {
     #hero-title {
-        margin-top: calc(100vh/16*6);
-        margin-bottom: 93vh;
+        padding-top: calc(100vh/16*6);
+        padding-bottom: 50vh;
     }
 
     #hero-title .container {
@@ -189,7 +209,7 @@ a.active {
         background: #0e1113;
     }
     .right-card, .left-card {
-        margin-bottom: calc(100vh/16*2);
+        margin-bottom: calc(100vh/16*2.5);
         margin-top: 0;
     }
 

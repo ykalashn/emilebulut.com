@@ -145,66 +145,6 @@ a:hover, a:active, a:focus {
   overflow: hidden;
 }
 
-
-/*---------------------------------------
-    Preloader section
------------------------------------------*/
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
-}
-
-.sk-spinner-wordpress.sk-spinner {
-  background-color: #000000;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  position: relative;
-  -webkit-animation: sk-innerCircle 1s linear infinite;
-  animation: sk-innerCircle 1s linear infinite;
-}
-
-.sk-spinner-wordpress .sk-inner-circle {
-  display: block;
-  background-color: #ffffff;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  border-radius: 8px;
-  top: 5px;
-  left: 5px;
-}
-
-@-webkit-keyframes sk-innerCircle {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-
-@keyframes sk-innerCircle {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-
-
-
 /*---------------------------------------
     Main Navigation
 -----------------------------------------*/
@@ -292,10 +232,6 @@ a.active {
   height: 100vh;
 }
 
-.main-about {
-  background: url('../images/about-bg.jpg') no-repeat;
-}
-
 .main-single-post {
   background: url("https://i.ibb.co/SfdG09K/2.jpg") no-repeat;
 }
@@ -307,9 +243,6 @@ a.active {
   background: url("https://i.ibb.co/fDwHmJ0/blog-bg.jpg") no-repeat;
 }
 
-.main-contact {
-  background: url('../images/contact-bg.jpg') no-repeat;
-}
 
 #particles-js {
   position: absolute;
@@ -318,9 +251,15 @@ a.active {
   top: 0;
   left: 0;
 }
-
+#home h1 {
+  font-family: 'Freig-I';
+  font-size: calc(5.5vh + 2vw);
+}
 #home h4 {
-  color: #E4DCD2;;
+  color: #E4DCD2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 2vh;
 }
 
 #home .btn {
@@ -328,7 +267,7 @@ a.active {
   border: 2px solid #ffffff;
   border-radius: 100px;
   color: #444;
-  font-family: 'glovis', 'Merriweather', serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -343,32 +282,6 @@ a.active {
   border-color: #ffffff;
   color: #ffffff;
 }
-
-
-
-/*---------------------------------------
-   About section
------------------------------------------*/
-
-#about .col-md-6 {
-  padding-top: 22px;
-  padding-bottom: 32px;
-}
-
-#about .col-md-6 img {
-  padding: 22px 0px 22px 22px;
-}
-
-#about .col-md-4 {
-  padding-bottom: 32px;
-}
-
-#about .col-md-4 img {
-  padding-top: 12px;
-}
-
-/* Paralax */
-
 
 /*---------------------------------------
    Blog Page section
@@ -642,18 +555,22 @@ a.active {
 }
 .post-preview > a > .post-title {
   font-size: 30px;
+  font-family: 'Freig', inherit;
+  font-weight: 600;
   /* margin-top: 30px; */
   margin-bottom: 10px;
 }
 .post-preview > a > .post-subtitle {
   margin: 0;
-  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;;
+  font-weight: 200;
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
   color: #777777;
   font-size: 18px;
-  font-style: italic;
+  font-family: 'Freig', inherit;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
@@ -673,42 +590,13 @@ a.active {
 
 
 /*---------------------------------------
-   Works section
------------------------------------------*/
-#works .title-h1 {
-  font-size: 10vh;
-  font-family: 'argesta_displayregular';
-}
-
-#works .card-title {
-  font-size: 4vh;
-  font-family: 'argesta_displayregular';
-}
-
-#works .card-text {
-  font-style: italic;
-  color: #323232;
-  padding: 0 3px;
-  font-size: 2.3vh;
-}
-
-#works .card-body span {
-  background-color: #E1E1E1;
-}
-
-#works .card-img-top {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-}
-
-
-/*---------------------------------------
    Mobile Responsive
 -----------------------------------------*/
 @media (min-width: 981px) {
 	.main-home {
-	  background: url("https://i.ibb.co/DgKVgTY/emil-jpg.jpg") no-repeat;
+    background: url("https://i.ibb.co/DgKVgTY/emil-jpg.jpg") no-repeat;
+    background-position: 20%!important;
+    background-size: cover;
 	}
 }
 
@@ -719,14 +607,14 @@ a.active {
   .main-blog,
   .main-contact,
 	.overtaking {
-    height: 35vh;
+    height: 100vh;
   }
 	.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {
 		padding-right:24px;
 		padding-left:24px
 	}
 	.main-home {
-	  background: url("https://i.ibb.co/8xRpCs0/home-image.jpg") no-repeat;
+    background: url("https://i.ibb.co/8xRpCs0/home-image.jpg") no-repeat;
 	}
 
 }
