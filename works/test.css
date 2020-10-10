@@ -19,9 +19,9 @@
 
 :root {
     --height-of-header: calc(20vh + 54px + 4vh);
-    --height-of-header-mobile: calc(3vh + 54px + 4vh);
+    --height-of-header-mobile: calc(1vh + 54px + 4vh);
     --height-hero-img: 38vh;
-    --height-hero-img-mobile: 50vh;
+    --height-hero-img-mobile: 46vh;
   }
 
 html {
@@ -33,19 +33,79 @@ html {
 
 body {
     overflow-x: hidden;
+    font-family: 'Freig', 'argesta_displayregular', sans-serif;
+    background-color:#dadada;
+
 }
 
-body::selection {
+::selection {
     color: white;
     background-color: black;
 }
+
+/*---------------------------------------
+    Preloader section
+-----------------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+  }
+  
+  .sk-spinner-wordpress.sk-spinner {
+    background-color: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    -webkit-animation: sk-innerCircle 1s linear infinite;
+    animation: sk-innerCircle 1s linear infinite;
+  }
+  
+  .sk-spinner-wordpress .sk-inner-circle {
+    display: block;
+    background-color: #ffffff;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    border-radius: 8px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  @-webkit-keyframes sk-innerCircle {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0); }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); } }
+  
+  @keyframes sk-innerCircle {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0); }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); } }
+  
 
 /* TYPOGRAPHY */
 
 .logo {
     font-family: 'argesta_displayregular';
     font-size: 1.8em;
-    color: black;
     font-weight: 300;
     line-height: 1;
 }
@@ -55,10 +115,11 @@ body::selection {
     margin-top: -0.5vw;
     font-family: 'Freig-I';
     font-size: 6vh;
+    color: black;
 }
 
-.card-body {
-    margin-top: 
+.card {
+    background-color: inherit;
 }
 
 .card-title {
@@ -75,10 +136,11 @@ body::selection {
 
 a {
     color: black;
+
 }
 a:hover {
     color: #757575;
-    text-decoration: none;
+    text-decoration: underline;
 }
 /* MENU  */
 
@@ -141,9 +203,9 @@ a:hover {
     right: 0;
     padding: 0;
     transition: opacity 0.3s linear;
-    z-index: 100;
     height: 64px;
     margin-top: 4vh;
+    z-index: 100;
 }
 
 #header .container-fluid {
@@ -230,7 +292,7 @@ main {
 
 @media (max-width: 991.99px) {
     .col-prim {
-        margin-top: calc((95vh - var(--height-of-header) - var(--height-hero-img) - 100px - 6em - 6vh)/2);        
+        margin-top: calc((90vh - var(--height-of-header) - var(--height-hero-img) - 100px - 6em - 6vh)/2);        
     }
 
     .all-works .card.left {
