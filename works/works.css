@@ -96,7 +96,7 @@ a.active {
 #hero-title .title {
     font-size: calc(13vw + 5vh);
     line-height: 0.73;
-    opacity: 0.35;
+    opacity: 0.7;
     -webkit-transition: all .5s;
     transition: all 0.5s;
     font-family: 'Freig-I', serif;
@@ -130,11 +130,11 @@ a.active {
 
 #content a img {
     transition: all 0.35s linear;
-    opacity: 0.99;
+    opacity: 0.8;
 }
 
 #content a:hover img {
-    opacity: 0.6;
+    opacity: 0.5;
     transform: scale(1.03);
 }
 
