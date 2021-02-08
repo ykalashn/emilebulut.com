@@ -1,87 +1,15 @@
-@font-face {
-    font-family: 'Freig-I';
-    src: url('../fonts/FreigDisProLigIta.ttf');
-}
-@font-face {
-    font-family: 'Freig';
-    src: url('../fonts/FreigDisProLig.ttf');
-}
-@font-face {
-      font-family: 'argesta_displayregular';
-      src: url('../fonts/argestadisplay-regular-webfont.eot');
-      src: url('../fonts/argestadisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/argestadisplay-regular-webfont.woff2') format('woff2'),
-           url('../fonts/argestadisplay-regular-webfont.woff') format('woff'),
-           url('../fonts/argestadisplay-regular-webfont.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-}
-
 html, body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-family: 'Freig', 'argesta_displayregular', serif;
-    background-color:#0e1113;
-    color: #e7e4d4;
+    font-family: 'Freig-I', 'argesta_displayregular', serif;
 }
 
-/* HEADER */
-
-header {
-    text-align: center;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    height: 65px;
-}
-
-nav ul {
-    display: inline-block;
-    padding-left: 0;
-    list-style: none;
-    padding: 20px;
-    margin-bottom: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-}
-
-nav li {
-    display: inline-block;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-nav li a {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-    font-size: 11px;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-}
-
-.bg-nav ul {
-    padding: 10px;
-}
-
-a:focus {
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
-    opacity: 0.35;
-    text-decoration: none;
-}
-
-a.active {
-    opacity: 0.35;
-    text-decoration: none;
-
+.works-page {
+    text-decoration: underline!important;
+    opacity: 0.65;
 }
 
 /* hero title */
@@ -99,8 +27,8 @@ a.active {
     opacity: 1;
     -webkit-transition: all .5s;
     transition: all 0.5s;
-    font-family: 'Freig-I', serif;
-
+    color: var(--title-color);
+    font-weight: normal;
 }
 
 .dash {
@@ -112,7 +40,7 @@ a.active {
 /* content */
 
 #content img {
-    min-height: 35vw;
+    height: 35vw;
 }
 
 #content .img-scale {
@@ -120,22 +48,21 @@ a.active {
 }
 #content a {
     text-decoration: none;
-    color: white;
 }
 
 #content a:hover {
-    text-decoration: none;
-    color: white;
+    text-decoration: underline;
+    color: inherit;
 }
 
 #content a img {
     transition: all 0.35s linear;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 #content a:hover img {
-    opacity: 0.5;
-    transform: scale(1.03);
+    /* opacity: 0.5; */
+    transform: scale(1.05);
 }
 
 .right-card, .left-card {
@@ -152,18 +79,21 @@ a.active {
     padding: 0;
 }
 .work-img-title {
+    padding: 0 16px;
     margin-top: 6%;
 }
 
 .work-img-title h2 {
-    font-size: 5vh;
+    color: var(--title-color);
+    font-size: var(--secondary-title-font-size);
+    font-weight: normal;
 }
 
 .work-img-title .text-sec {
     margin-top: 3%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 200;
-    opacity: 0.9;
+    font-weight: 300;
+    color: var(--secondary-color);
 }
 
 #content img {
@@ -171,7 +101,12 @@ a.active {
     height: 50vh;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+#video-work {
+    padding-top: 10vh;  
+}
+
+
+@media screen and (min-width: 570px) and (max-width: 1025px) {
     #hero-title {
         margin-bottom: calc(100vh/16*2);
         margin-top: calc(100vh/16*4 - 50px);
@@ -193,16 +128,20 @@ a.active {
         width: 100%;
         height: 50vw;
     }
+
+    #video-work {
+        padding-top: 30vh;  
+    }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 569.98px) {
     #hero-title {
         padding-top: calc(100vh/16*6);
         padding-bottom: 50vh;
     }
 
     #hero-title .container {
-        position: fixed;
+        position: fixed!important;
     }
 
     #hero-title .title {
@@ -211,7 +150,7 @@ a.active {
 
     #content .container {
         position: relative;
-        background: #0e1113;
+        background: var(--background);
     }
     .right-card, .left-card {
         margin-bottom: calc(100vh/16*2.5);
@@ -220,5 +159,10 @@ a.active {
 
     #content img {
         height: 110vw;
+    }
+
+
+    #video-work {
+        padding-top: 35vh;  
     }
 }

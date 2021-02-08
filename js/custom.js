@@ -1,38 +1,19 @@
+// Navigation
 
+$(function(){
+    $("#nav-placeholder").load("../nav.html");
+});
 
-  /*-------------------------------------------------------------------------------
-    PRE LOADER
-  -------------------------------------------------------------------------------*/
+// Footer
 
-  $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
-  });
+$(document).ready(function(){
+$( "#footer-placeholder" ).load( "../footer.html" );
+});
 
+// Google Analytics
 
-  /*-------------------------------------------------------------------------------
-    jQuery Parallax
-  -------------------------------------------------------------------------------*/
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-    function initParallax() {
-    $('#home').parallax("50%", 0.3);
-
-  }
-  initParallax();
-
-
-  /* Back top
-  -----------------------------------------------*/
-  
-  $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-        $('.go-top').fadeIn(200);
-        } else {
-          $('.go-top').fadeOut(200);
-        }
-        });   
-        // Animate the scroll to top
-      $('.go-top').click(function(event) {
-        event.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 300);
-      })
-
+gtag('config', 'UA-178238208-1');

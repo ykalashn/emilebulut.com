@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Freig-I';
+    src: url('../fonts/FreigDisProLigIta.ttf');
+}
+
+@font-face {
+    font-family: 'Freig';
+    src: url('../fonts/FreigDisProLig.ttf');
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Freig-I', Georgia, 'Times New Roman', Times, serif;
+    /* letter-spacing: 0.5px; */
+    font-weight: normal;
+}
+  
+h1 {
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+}
+  
+h2,h3 {
+  padding-bottom: 6px;
+}
+
+h4 {
+  letter-spacing: 2px;
+}
+
+.blog-post-des {
+  font-size: 18px;
+}
+
+p {
+  color: var(--paragraph-color);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 1em;
+}

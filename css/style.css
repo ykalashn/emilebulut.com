@@ -1,79 +1,31 @@
-@font-face {
-  font-family: 'Freig-I';
-  src: url('../fonts/FreigDisProLigIta.ttf');
-}
-@font-face {
-  font-family: 'Freig';
-  src: url('../fonts/FreigDisProLig.ttf');
-}
-@font-face {
-    font-family: 'argesta_displayregular';
-    src: url('../fonts/argestadisplay-regular-webfont.eot');
-    src: url('../fonts/argestadisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/argestadisplay-regular-webfont.woff2') format('woff2'),
-         url('../fonts/argestadisplay-regular-webfont.woff') format('woff'),
-         url('../fonts/argestadisplay-regular-webfont.ttf') format('truetype');
-    /* font-weight: normal; */
-    font-style: normal;
+@import "typography.css";
+
+:root {
+  --nav-color: #f5f5f7;
+  /* --nav-color: #1d1d1f; */
+  
+  --background: #1d1d1f;
+  /* --background: white; */
+  /* --border: 1px solid rgba(176, 176, 176, 0.3); */
+  --border: 1px solid #ccc;
+
+  --title-color: #f5f5f7;
+  /* --title-color: black; */
+  --secondary-color: rgb(176, 176, 176);
+  /* --secondary-color: #333; */
+
+  --secondary-title-font-size: 2.3em;
+  /* --paragraph-color: #f3f3f3; */
+  --paragraph-color: #f5f5f7;
+  /* --paragraph-color: #333; */
+
 }
 
 body {
-		background: #ffffff;
-    font-family: 'Freig','argesta_displayregular', serif;
-    font-style: normal;
+    background: var(--background);
     overflow-x: hidden;
 }
 
-
-/*---------------------------------------
-    Typorgraphy
------------------------------------------*/
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Freig', Georgia, 'Times New Roman', Times, serif;
-  font-style: normal;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-}
-
-h1 {
-    /* font-size: 48px; */
-    padding-bottom: 14px;
-    margin-bottom: 0px;
-		/* line-height: 48px; */
-}
-
-h2 {
-  /* font-size: 32px; */
-}
-
-h2,h3 {
-  padding-bottom: 6px;
-}
-
-h3 {
-  /* font-size: 26px; */
-}
-
-h4 {
-  /* font-size: 12px; */
-  letter-spacing: 2px;
-}
-
-p {
-    color: #333;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 30px;
-    letter-spacing: 0.01em;
-		margin-bottom: 1em;
-}
-
-.btn-success:focus {
-  background-color: #000;
-  border-color: transparent;
-}
 
 
 /*---------------------------------------
@@ -86,29 +38,13 @@ html{
 }
 
 a {
-  color: #4d638c;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  text-decoration: none !important;
+  color: var(--headline-color);
 }
 a:hover, a:active, a:focus {
   text-decoration: underline;
   outline: none;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 #about,
 #blog-page,
@@ -124,7 +60,7 @@ a:hover, a:active, a:focus {
 }
 
 .overlay {
-  background: rgba(0,0,0,0.65 );
+  background: rgba(0,0,0,0.65);
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -140,68 +76,6 @@ a:hover, a:active, a:focus {
   overflow: hidden;
 }
 
-/*---------------------------------------
-    Main Navigation
------------------------------------------*/
-
- /* HEADER */
-
-header {
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  height: 65px;
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  text-align: center;
-}
-
-nav ul {
-  display: inline-block;
-  padding-left: 0;
-  list-style: none;
-  padding: 20px;
-  margin-bottom: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-nav li {
-  display: inline-block;
-  margin: 10px;
-  margin-top: 20px;
-}
-
-nav li a {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
-  font-size: 11px;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 300;
-}
-
-.bg-nav ul {
-  padding: 10px;
-}
-
-a:focus {
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  opacity: 0.35;
-  text-decoration: none;
-}
-
-a.active {
-  opacity: 0.45;
-  text-decoration: none;
-
-}
 
 /*---------------------------------------
     Home section
@@ -210,7 +84,6 @@ a.active {
 #home {
     background-size: cover;
     background-position: center center;
-    color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
      display: -ms-flexbox;
@@ -230,6 +103,7 @@ a.active {
 .main-single-post {
   background: url("https://i.ibb.co/SfdG09K/2.jpg") no-repeat;
 }
+
 .overtaking {
   background: url("https://i.ibb.co/1M6ymTx/overtaking-bg.jpg") no-repeat;
 }
@@ -244,18 +118,26 @@ a.active {
 
 #home h1 {
   font-family: 'Freig-I', Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
   font-size: 72px;
+  color: var(--title-color);
 }
+
+@media screen and (max-width: 768px) {
+  .main-home h1 {
+    padding-top: 20vh;
+  }
+}
+
 #home h4 {
-  color: #E4DCD2;
+  color: var(--secondary-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 18px;
 }
 
 #home .btn {
   background: #ffffff;
-  border: 2px solid #ffffff;
   border-radius: 100px;
   color: #444;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -265,318 +147,18 @@ a.active {
   text-transform: uppercase;
   padding: 13px 22px;
   margin-top: 42px;
-  transition: all 0.4s ease-in-out;
 }
 
 #home .btn:hover {
   background: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-/*---------------------------------------
-   Blog Page section
------------------------------------------*/
-
-#blog-page {
-  padding: 6em 0;
-  clear: both;
-  border-bottom: 2px solid rgba(49, 122, 225, 0.1);
-}
-
-.blog-page {
-  margin-bottom: 60px;
-}
-.blog-page > a {
-  display: block;
-  position: relative;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-.blog-page > a img {
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .blog-page {
-    width: 100%;
-  }
-}
-.blog-page .blog-text {
-  margin-bottom: 30px;
-  position: relative;
-  width: 100%;
-  padding: 30px;
-  float: left;
-  background: #fff;
-  border: 1px solid rgbs(#000, 0.2);
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-.blog-page .blog-text span {
-  display: inline-block;
-  margin-bottom: 0px;
-}
-.blog-page .blog-text span.comment {
-  float: right;
-}
-.blog-page .blog-text span.comment a {
-  color: rgba(0, 0, 0, 0.3);
-}
-.blog-page .blog-text span.comment a i {
-  color: #317AE1;
-  padding-left: 7px;
-}
-.blog-page .blog-text h3 {
-  font-size: 20px;
-  margin-bottom: 5px;
-  line-height: 1.5;
-}
-.blog-page .blog-text h3 a {
-  color: black;
-}
-
-
-/*---------------------------------------
-   Blog section
------------------------------------------*/
-
-.blog-post-thumb {
-  border-bottom: 1px solid #f0f0f0;
-  padding-top: 32px;
-  padding-bottom: 62px;
-  margin-bottom: 32px;
-}
-
-.blog-post-thumb:last-child {
-  border-bottom: 0px;
-  padding-bottom: 32px;
-  margin-bottom: 0px;
-}
-
-.blog-post-image,
-.blog-post-video {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  width: 100%;
-}
-
-#about img,
-.blog-post-image img {
-  border-radius: 1px;
-}
-
-.blog-post-title a {
-  color: #000000;
-}
-
-.blog-post-title a:hover {
-  text-decoration: underline;
-}
-
-.blog-post-format {
-  padding-bottom: 22px;
-}
-
-.blog-post-format span {
-  letter-spacing: 0.5px;
-  padding-right: 12px;
-}
-
-.blog-post-format span a {
-  color: #333;
-}
-
-.blog-post-format span img {
-  display: inline-block;
-  width: 42px;
-  margin-right: 4px;
-}
-
-.blog-post-des blockquote {
-  margin: 22px;
-}
-
-.blog-post-des .btn {
-  border-radius: 100px;
-  color: #000000;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 14px 28px;
-  margin-top: 26px;
-  transition: all 0.4s ease-in-out;
-}
-
-.blog-page .btn {
-  border-radius: 50px;
-}
-
-.blog-page .blog-post-format {
-  padding-bottom: 0px;
-}
-
-.blog-author {
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-top: 42px;
-  margin-bottom: 42px;
-}
-
-.blog-author .media img {
-  display: inline-block;
-  width: 90px;
-  margin-right: 12px;
-}
-
-.blog-author .media a,
-.blog-comment .media h3 {
-  color: #444;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.blog-comment {
-  border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 32px;
-  margin-bottom: 42px;
-}
-
-.blog-comment .media:nth-child(2) {
-  padding-top: 22px;
-}
-
-.blog-comment .media img {
-  width: 82px;
-  margin-right: 12px;
-}
-
-.blog-comment .media h3 {
-  display: inline-block;
-  padding-right: 14px;
-}
-
-
-.blog-comment-form h3 {
-  padding-bottom: 18px;
-}
-
-#about .col-md-6, #about .col-md-4,
-.blog-comment-form .col-md-4 {
-  padding-left: 0px;
-}
-
-.blog-comment-form .form-control {
-  box-shadow: none;
-  border: 2px solid #f0f0f0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transition: all 0.4s ease-in-out;
-}
-
-.blog-comment-form .form-control:hover {
-  border-color: #555;
-}
-
-.blog-comment-form input {
-  height: 45px;
-}
-
-.blog-comment-form input[type="submit"] {
-  background: #bfba55;
-  border-radius: 100px;
-  border: none;
-  color: #ffffff;
-  font-weight: bold;
-  transition: all 0.4s ease-in-out;
-}
-
-.blog-comment-form input[type="submit"]:hover {
-  background: #333;
-  border-color: transparent;
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
 
 
-
-/*---------------------------------------
-   Blog Single Post section
------------------------------------------*/
-
-#blog-single-post .blog-single-post-image {
-  padding-top: 22px;
-}
-
-#blog-single-post .blog-single-post-image .col-md-4 {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 22px;
-}
-
-#blog-single-post .blog-single-post-image img {
-  border-radius: 1px;
-  padding-right: 12px;
-}
-
-#blog-single-post .blog-post-des h3 {
-  padding-top: 16px;
-}
-
-#blog h4 {
-  color: red;
-	font-size: 16px;
-	margin-block-start: 1em;
-}
-
-#blog h2 {
-	margin-block-start: 0em;
-}
-.post-preview > a {
-  color: #333333;
-}
-.post-preview > a:hover,
-.post-preview > a:focus {
-  text-decoration: none;
-  color: #0085A1;
-}
-.post-preview > a > .post-title {
-  font-size: 30px;
-  font-family: 'Freig', inherit;
-  font-weight: 600;
-  /* margin-top: 30px; */
-  margin-bottom: 10px;
-}
-.post-preview > a > .post-subtitle {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.5em;;
-  font-weight: 200;
-  margin-bottom: 10px;
-}
-.post-preview > .post-meta {
-  color: #777777;
-  font-size: 18px;
-  font-family: 'Freig', inherit;
-  margin-top: 0;
-}
-.post-preview > .post-meta > a {
-  text-decoration: none;
-  color: #333333;
-}
-.post-preview > .post-meta > a:hover,
-.post-preview > .post-meta > a:focus {
-  color: #0085A1;
-  text-decoration: underline;
-}
-@media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
+#blog-single-post .container {
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 
@@ -600,10 +182,6 @@ a.active {
   .parallax-section {
     height: 100vh;
   }
-	.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {
-		padding-right:24px;
-		padding-left:24px
-	}
 	.main-home {
     background: url("https://i.ibb.co/8xRpCs0/home-image.jpg") no-repeat;
 	}
@@ -639,7 +217,6 @@ a.active {
   #blog-single-post .blog-single-post-image img {
     padding-bottom: 22px;
   }
-
 }
 
 
@@ -648,8 +225,12 @@ a.active {
   h1 {
     font-size: 42px;
   }
+
 	p {
     font-size: 18px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 400;
   }
 
   #about, #blog-page,
