@@ -63,7 +63,7 @@ a:hover {
     color: var(--rubric-color);
     font-family: var(--secondary-sans-font);
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 8px;
     letter-spacing: 0.05em;
@@ -146,7 +146,7 @@ a:hover {
 
 .blog-post-format {
 padding-bottom: 24px;
-color: var(--secondary-color);
+color: var(--timestamp-color);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
@@ -157,7 +157,6 @@ color: var(--secondary-color);
     
     #highlight h3 {
         font-size: 11px;
-        font-weight: 600;
         margin-bottom: 8px;
     }
     
