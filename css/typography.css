@@ -10,8 +10,8 @@
 }
 
 h1,h2,h3,h4,h5,h6 {
-  letter-spacing: -0.001em;
-  font-weight: 600;
+  letter-spacing: normal;
+  font-weight: normal;
   font-style: normal;
 }
   
