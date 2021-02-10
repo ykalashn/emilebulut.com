@@ -42,7 +42,7 @@ a,
 a:hover {
     color: var(--title-color);
     font-family: var(--default-primary-font);
-    font-weight: 600;
+    /* font-weight: normal; */
 }
 
 #highlight p,
@@ -50,7 +50,7 @@ a:hover {
     color: var(--secondary-color);
     font-family: var(--default-secondary-font);
     font-weight: normal;
-    font-size: 21px;
+    font-size: 24px;
     line-height: 1.3;
 }
 
@@ -74,10 +74,6 @@ a:hover {
     line-height: 1.1;
     margin-bottom: 20px;
     letter-spacing: 1.4px;
-}
-
-#highlight h2:hover {
-    text-decoration: underline;
 }
 
 /* POSTS */
@@ -132,11 +128,6 @@ a:hover {
     font-size: 20px;
     line-height: 1.3;
 }
-
-#posts .card-title:hover {
-    text-decoration: underline;
-}
-
 
 .blog-post-image {
     padding-top: 22px;
@@ -202,8 +193,8 @@ color: var(--timestamp-color);
 
     #highlight p,
     #posts .card-text {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 21px;
+        line-height: 1.3;
     }
 
     #highlight {

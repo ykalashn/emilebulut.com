@@ -51,11 +51,6 @@ html, body {
     text-decoration: none;
 }
 
-#content a:hover {
-    text-decoration: underline;
-    color: inherit;
-}
-
 #content a img {
     transition: all 0.35s linear;
     /* opacity: 0.8; */
@@ -88,7 +83,7 @@ html, body {
     color: var(--title-color);
     font-size: var(--secondary-title-font-size);
     font-family: var(--default-primary-font);
-    font-weight: 600;
+    font-weight: 200;
 }
 
 .work-img-title .text-sec {

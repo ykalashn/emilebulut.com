@@ -9,9 +9,23 @@
     src: url('../fonts/FreigDisProLig.ttf');
 }
 
+@font-face {
+  font-family: 'FreigDispProBook-Regular';
+  src: url('../fonts/FreigDispProBook-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,h2,h3,h4,h5,h6 {
   letter-spacing: 0.2px;
   font-style: normal;
+}
+
+em {
+  font-family: 'Freig-I'!important;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1.3px;
 }
   
 h1 {
@@ -34,11 +48,12 @@ h4 {
 p {
   color: var(--paragraph-color);
   font-family: var(--default-secondary-font);
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 32px;
+  font-size: 24px;
+  font-weight: 200;
+  /* font-weight: bolder!important; */
+  line-height: 1.4;
   margin-bottom: 1em;
-  letter-spacing: normal;
+  letter-spacing: 0.9px;
 }
 
 #home h1 {
@@ -54,3 +69,12 @@ p {
   font-size: 20px;
 }
 
+@media (max-width: 569.98px) {
+  p {
+    font-size: calc(24px + (72 - 24) * (38vh - 320px)/ (1400 - 320));
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.35;
+    /* letter-spacing: 1px; */
+  }
+}
