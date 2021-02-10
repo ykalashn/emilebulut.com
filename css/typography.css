@@ -16,6 +16,16 @@
   font-style: normal;
 }
 
+::-moz-selection { 
+  color: var(--background);
+  background: var(--paragraph-color);
+}
+
+::selection {
+  color: var(--background);
+  background: var(--paragraph-color);
+}
+
 h1,h2,h3,h4,h5,h6 {
   letter-spacing: 0.2px;
   font-style: normal;
