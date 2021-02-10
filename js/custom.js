@@ -1,11 +1,11 @@
 // Navigation
 
 $(function(){
-    $("#nav-placeholder").load("../nav.html");
+    $("#nav-placeholder").load("https://emilebulut.com/nav.html");
 });
 
 // Footer
 
 $(document).ready(function(){
-$( "#footer-placeholder" ).load( "../footer.html" );
+$( "#footer-placeholder" ).load( "https://emilebulut.com/footer.html" );
 });
