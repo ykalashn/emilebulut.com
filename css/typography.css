@@ -60,7 +60,6 @@ p {
   font-family: var(--default-secondary-font);
   font-size: 24px;
   font-weight: 200;
-  /* font-weight: bolder!important; */
   line-height: 1.4;
   margin-bottom: 1em;
   letter-spacing: 0.9px;
@@ -77,6 +76,10 @@ p {
   font-family: var(--secondary-sans-font);
   font-weight: 300;
   font-size: 20px;
+}
+
+blockquote p {
+  font-style: italic;  
 }
 
 @media (max-width: 569.98px) {

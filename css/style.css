@@ -117,6 +117,10 @@ a:hover {
   background: url("../images/A-View-from-The-Bed.jpg") no-repeat;
 }
 
+.the-death-of-language {
+  background: url("../blog/images/Fire_Instagram.png") no-repeat;
+}
+
 @media screen and (max-width: 768px) {
   .main-home h1 {
     padding-top: 20vh;

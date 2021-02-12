@@ -10,7 +10,7 @@
     }
 
     #highlight {
-        /* border-bottom: var(--border); */
+        border-bottom: var(--border);
         padding-bottom: 30px;
     }
 
