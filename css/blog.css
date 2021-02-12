@@ -203,8 +203,10 @@ color: var(--timestamp-color);
         padding-bottom: 0;
     }
 
-    #highlight img {
-        margin-bottom: 24px;
+    #highlight img,
+    #posts .card-img-top {
+        padding-bottom: 24px;
+        border-radius: 0;
     }
     
     .borderline {
@@ -230,14 +232,9 @@ color: var(--timestamp-color);
         border-top: var(--border);
     }
     
-    #posts .card-img-top {
-        padding-bottom: 15px;
-        border-radius: 0;
-    }
-    
-    #posts img {
+    /* #posts img {
         min-height: calc(150px + 20vw);
-    }
+    } */
 
     #posts .card-body {
         padding: 0;
