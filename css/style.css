@@ -99,6 +99,8 @@ h2 a:hover {
 
 .main-home {
   height: 100vh;
+  background: url("../images/homepage-background-desktop.jpg") no-repeat;
+
 }
 
 .main-single-post {
@@ -119,6 +121,10 @@ h2 a:hover {
 
 .the-death-of-language {
   background: url("../blog/images/The-Death-of-Language-in-Johnny-23.jpg") no-repeat;
+}
+
+.main-home h1 {
+  padding-top: 10vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -158,8 +164,7 @@ h2 a:hover {
 -----------------------------------------*/
 @media (min-width: 981px) {
 	.main-home {
-    background: url("https://i.ibb.co/DgKVgTY/emil-jpg.jpg") no-repeat;
-    background-position: 20%!important;
+    /* background-position: 20%!important; */
     background-size: cover;
 	}
 }
@@ -174,7 +179,7 @@ h2 a:hover {
     height: 100vh;
   }
 	.main-home {
-    background: url("https://i.ibb.co/8xRpCs0/home-image.jpg") no-repeat;
+    background: url("../images/homepage-background-tablet.jpg") no-repeat;
 	}
 
 }
@@ -212,6 +217,9 @@ h2 a:hover {
 
 
 @media (max-width: 650px) {
+  .main-home {
+    background: url("../images/homepage-background-mobile.jpg") no-repeat;
+	}
 
   h1 {
     font-size: 42px;
