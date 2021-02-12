@@ -30,6 +30,40 @@
   <link rel="icon" type="image/png" sizes="400x400" href="images/icon.png">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/font-awesome.min.css">
+<script src="../js/handlebars.min.js"></script>
+<script id="templateHB" type="text/x-handlebars-template">
+    <section id="highlight" class="container-lg">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-5 d-flex align-items-md-center order-2 order-md-1 hero-text">
+                <div>
+                    <h3>{{tag}}</h3>
+                    <h2><a href="{{link}}">{{title}}</a></h2>
+                    <p>{{description}}</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 order-1 order-md-2">
+                <a href="{{link}}"><img src="{{image}}" class="img-fluid" alt="{{alt}}"></a>
+            </div>
+        </div>
+    </section>
+    {{#each posts}}
+    <section id="posts" class="container-lg">
+        <!-- <div class="row justify-content-md-center"> -->
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <a href="{{this.link}}"><img class="card-img-top cover" src="{{this.image}}" alt="{{this.alt}}"></a>
+                    <div class="card-body">
+                        <h3>{{this.tag}}</h3>
+                        <h2 class="card-title"><a href="{{this.link}}">{{this.title}}</a></h2>
+                        <p class="card-text">{{this.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{/each}}
+</script>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/blog.css">
 </head>
@@ -37,7 +71,8 @@
 
 <div id="nav-placeholder"></div>
 
-<section id="highlight" class="container-lg">
+<div id="blogposts"></div>
+<!-- <section id="highlight" class="container-lg">
     <div class="row justify-content-md-center">
         <div class="col-12 col-md-5 d-flex align-items-md-center order-2 order-md-1 hero-text">
             <div>
@@ -52,7 +87,7 @@
     </div>
 </section>
 <section id="posts" class="container-lg">
-    <!-- <div class="row justify-content-md-center"> -->
+    <div class="row justify-content-md-center">
     <div class="row">
         <div class="col-12 col-md-4">
             <div class="card">
@@ -64,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="col-12 col-md-4 card-middle">
+        <div class="col-12 col-md-4 card-middle">
             <div class="card">
                 <img class="card-img-top cover" src="../images/Overtaking.jpg" alt="">
                 <div class="card-body">
@@ -81,9 +116,9 @@
                   <p class="card-text"></p>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
-</section>
+</section> -->
 
 <div id="footer-placeholder"></div>
 
@@ -93,6 +128,6 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="../js/custom.js"></script>
-
+<script src="../js/blog.js"></script>
 </body>
 </html>
