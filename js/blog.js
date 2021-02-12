@@ -6,11 +6,11 @@ const context = {
     link: './2021/the-death-of-language.html',
     posts: [
         {
-        image: '',
-        tag: '',
-        title: '',
-        description: '',
-        link: ''
+        image: './images/what-is-the-Emil-Bulut-and-who-is-this-website.jpg',
+        tag: 'Feature',
+        title: 'hat is the Emil Bulut and who is this website',
+        description: 'Hi there real life human person! I’m Emil and I like making up stories.',
+        link: './2019/what-is-the-emil-bulut-and-who-is-this-website.html'
         },
     ]
 };
