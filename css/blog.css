@@ -58,6 +58,10 @@ a:hover {
     padding-top: 130px;
 }
 
+#highlight p, #posts p {
+    margin-bottom: 0;
+}
+
 #highlight h3,
 #posts h3 {
     color: var(--rubric-color);
@@ -79,15 +83,16 @@ a:hover {
 /* POSTS */
 
 #posts {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-bottom: 30px;
-    border-bottom: var(--border);
+    /* border-bottom: var(--border); */
 }
 
 #posts .card {
     background-color: inherit;
     border: none;
     border-radius: 0;
+    padding-top: 30px;
 }
 
 #posts .card-img-top {
@@ -143,7 +148,7 @@ color: var(--timestamp-color);
 @media screen and (min-width: 768px) and (max-width: 1025px) {
     #highlight {
         padding-top: 120px;
-        padding-bottom: 48px;
+        padding-bottom: 30px;
     }
     
     #highlight h3 {
@@ -199,7 +204,11 @@ color: var(--timestamp-color);
 
     #highlight {
         padding-top: 100px;
-        padding-bottom: 48px;
+        padding-bottom: 30px;
+    }
+
+    #highlight p {
+        padding-bottom: 0;
     }
 
     #highlight img {
@@ -225,7 +234,6 @@ color: var(--timestamp-color);
         background-color: inherit;
         border: none;
         border-radius: 0;
-        padding-top: 24px;
         border-top: var(--border);
     }
     
