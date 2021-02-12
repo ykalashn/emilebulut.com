@@ -69,8 +69,9 @@ a:hover {
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 8px;
     letter-spacing: 0.05em;
+    padding: 0;
+    margin: 0 20px 10px 0;
 }
 
 #highlight h2 {
@@ -105,21 +106,12 @@ a:hover {
     object-position: center;
 }
 
-#posts img {
-    /* height: 300px; */
-}
-
 #posts .img-scale {
     overflow: hidden;
 }
 
 #posts .card-body {
     padding: 0;
-}
-
-#posts h3 {
-    padding: 0;
-    margin: 0 20px 10px 0;
 }
 
 #posts .card-title {
@@ -150,7 +142,8 @@ color: var(--timestamp-color);
         padding-bottom: 30px;
     }
     
-    #highlight h3 {
+    #highlight h3,
+    #posts h3 {
         font-size: 11px;
         margin-bottom: 8px;
     }
@@ -218,7 +211,8 @@ color: var(--timestamp-color);
         border: none;
     }
     
-    #highlight h3 {
+    #highlight h3,
+    #posts h3 {
         font-size: 0.6rem;
         margin-bottom: 8px;
     }
