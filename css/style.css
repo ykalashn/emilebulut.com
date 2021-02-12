@@ -41,7 +41,7 @@ a:hover, a:active, a:focus {
   outline: none;
 }
 
-a:hover {
+h2 a:hover {
   border-bottom: 0.5px solid;
   text-decoration: none; 
   color: inherit;
