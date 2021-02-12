@@ -84,7 +84,7 @@ h2 a:hover {
 
 #home {
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
     display: -webkit-box;
     display: -webkit-flex;
      display: -ms-flexbox;
@@ -100,7 +100,6 @@ h2 a:hover {
 .main-home {
   height: 100vh;
   background: url("../images/homepage-background-desktop.jpg") no-repeat;
-
 }
 
 .main-single-post {
