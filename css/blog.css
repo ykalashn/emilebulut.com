@@ -66,10 +66,10 @@ a:hover {
 #posts h3 {
     color: var(--rubric-color);
     font-family: var(--secondary-sans-font);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     padding: 0;
     margin: 0 20px 10px 0;
 }
