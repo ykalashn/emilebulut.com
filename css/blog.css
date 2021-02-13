@@ -160,11 +160,6 @@ color: var(--timestamp-color);
         line-height: 1;
         margin-bottom: 7px;
     }
-    
-    #posts .card-text {
-        font-size: 21px;
-        line-height: 26;
-    }
 }
 
 @media (max-width: 767.98px) {

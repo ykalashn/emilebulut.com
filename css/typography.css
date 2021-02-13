@@ -57,7 +57,6 @@ h4 {
 p {
   color: var(--paragraph-color);
   font-family: var(--default-secondary-font);
-  /* font-size: 24px; */
   font-size: var(--paragraph-font-size);
   font-weight: 300;
   line-height: 1.4;
