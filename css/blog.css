@@ -51,7 +51,7 @@ a:hover {
 #highlight p, #posts p {
     margin-bottom: 0;
     font-size: var(--paragraph-font-size);
-    font-family: var(--paragraph-font);
+    font-family: 'Fraunces', serif;
 }
 
 #highlight h3,
