@@ -50,7 +50,7 @@ a:hover {
 
 #highlight p, #posts p {
     margin-bottom: 0;
-    font-size: calc(var(--paragraph-font-size));
+    font-size: var(--paragraph-font-size);
 }
 
 #highlight h3,
