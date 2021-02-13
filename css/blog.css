@@ -125,10 +125,6 @@ padding-bottom: 24px;
 color: var(--timestamp-color);
 }
 
-.blog-post-des p {
-    font-family: var(--default-paragraph-font);
-}
-
 @media screen and (min-width: 768px) and (max-width: 1025px) {
     #highlight {
         padding-top: 120px;
