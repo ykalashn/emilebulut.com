@@ -51,7 +51,6 @@ a:hover {
 #highlight p, #posts p {
     margin-bottom: 0;
     font-size: var(--paragraph-font-size);
-    font-family: 'Fraunces', serif;
 }
 
 #highlight h3,
@@ -124,6 +123,10 @@ a:hover {
 .blog-post-format {
 padding-bottom: 24px;
 color: var(--timestamp-color);
+}
+
+.blog-post-des p {
+    font-family: var(--default-paragraph-font);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
