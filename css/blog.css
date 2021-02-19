@@ -63,6 +63,7 @@ a:hover {
 
 #highlight {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #highlight p, #blog-hero p, #posts p {
@@ -71,7 +72,7 @@ a:hover {
 }
 
 #blog-hero .row {
-    height: calc(100vh - 65px);
+    min-height: calc(100vh - 65px);
 }
 
 #highlight h3,
@@ -100,7 +101,7 @@ a:hover {
 /* POSTS */
 
 #posts {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 #posts .card {
@@ -134,7 +135,7 @@ a:hover {
 }
 
 #posts .card-text {
-    margin: 15px 0 0;
+    margin: 0;
 }
 
 .blog-post-image {
@@ -144,13 +145,13 @@ a:hover {
 }
 
 .blog-post-format {
+    display: block;
     padding-bottom: 24px;
     color: var(--timestamp-color);
 }
 
 .blog-hero {
     background: var(--nav-background);
-    /* min-height: 100vh; */
 }
 
 blockquote {
@@ -160,8 +161,6 @@ blockquote {
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
     #highlight, #blog-hero {
-        /* padding-top: 120px; */
-        /* padding-top: calc(20vh - 65px); */
         padding-bottom: 30px;
     }
     
@@ -206,6 +205,11 @@ blockquote {
         letter-spacing: 0.2px;
     }
 
+    #highlight p, #blog-hero p, #posts p {
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+
     #posts .card-title {
         font-size: 30px;
         line-height: 1.1;
@@ -217,12 +221,7 @@ blockquote {
         padding-bottom: 0px;
     }
 
-    #highlight p {
-        padding-bottom: 24px;
-    }
-
     #highlight img,
-    /* #blog-hero img, */
     #posts .card-img-top {
         padding-bottom: 1rem;
         border-radius: 0;
