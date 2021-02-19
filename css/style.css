@@ -78,7 +78,6 @@ h2 a:hover {
 }
 
 .parallax-section {
-  /* background-attachment: fixed !important; */
   background-size: cover !important;
   overflow: hidden;
 }
