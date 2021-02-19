@@ -95,9 +95,6 @@ a:hover {
     letter-spacing: 1.4px;
 }
 
-#posts .card-img-top {
-    height: calc(200px + 5vh);
-}
 /* POSTS */
 
 #posts {
@@ -199,7 +196,7 @@ blockquote {
 @media (max-width: 767.98px) {
 
     #highlight h2 {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 1.1;
         margin-bottom: 8px;
         letter-spacing: 0.2px;
@@ -225,6 +222,7 @@ blockquote {
     #posts .card-img-top {
         padding-bottom: 1rem;
         border-radius: 0;
+        height: auto;
     }
 
     #blog-hero .row {
