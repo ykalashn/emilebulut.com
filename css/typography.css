@@ -101,6 +101,27 @@ blockquote p {
   padding: 2rem 0;
 }
 
+.p {
+  font-family: var(--default-paragraph-font);
+  opacity: 0.6;
+  font-weight: 300;
+  font-size: 90%;
+  letter-spacing: normal;
+}
+
+.p a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+#highlight h2 {
+  font-size: 30px;
+  line-height: 1.05;
+  margin-bottom: 7px;
+  letter-spacing: normal;
+  font-weight: bolder;
+}
+
 @media (max-width: 1025px) {
   .blog-hero h1 {
     font-size: 40px;
@@ -111,6 +132,10 @@ blockquote p {
   #blog-hero p {
     font-size: 22px;
     padding-bottom: 2rem;
+  }
+
+  #highlight h2 {
+    font-size: 26px;
   }
 }
 
