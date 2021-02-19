@@ -23,6 +23,11 @@
     overflow-x: hidden;
 }
 
+#highlight:last-child {
+    border: none;
+}
+
+
 @media screen and (min-width: 1025px) {
     #highlight,
     #blog-hero {
@@ -110,6 +115,7 @@ a:hover {
 
 blockquote {
     border-left: var(--border);
+    border-width: 2px;
     padding-left: 1rem;
 }
 
