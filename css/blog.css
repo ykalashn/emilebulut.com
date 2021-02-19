@@ -204,7 +204,6 @@ blockquote {
 
     #highlight p, #blog-hero p, #posts p {
         margin-bottom: 0;
-        padding-bottom: 1rem;
     }
 
     #posts .card-title {

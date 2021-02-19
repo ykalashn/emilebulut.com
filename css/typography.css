@@ -101,7 +101,7 @@ blockquote p {
   padding: 2rem 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+@media (max-width: 1025px) {
   .blog-hero h1 {
     font-size: 40px;
     line-height: 1.12em;
@@ -127,5 +127,6 @@ blockquote p {
 
   #blog-hero p {
     font-size: 25px;
+    padding-bottom: 2rem;
   }
 }
