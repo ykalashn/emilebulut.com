@@ -1,0 +1,111 @@
+<style>
+    #news-letter {
+        margin: 100px 0 24px 0;
+        padding: 64px 48px;
+        position: relative;
+        border: var(--border);
+        color: var(--paragraph-color);
+    }
+
+    #news-letter h2 {
+        color: var(--title-color);
+        font-family: var(--default-blog-title);
+        font-size: var(--secondary-title-font-size);
+    }
+    #news-letter p {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    #news-letter .input-field {
+        height: 3.1rem;
+        line-height: 1.31em;
+        background-color: inherit;
+        border: var(--border);
+        font-family: var(--secondary-sans-font);
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--timestamp-color);
+        margin-top: .5rem;
+        padding: .5rem;
+        width: 100%;
+    }
+
+    #news-letter form {
+        width: 100%;
+    }
+
+    #news-letter .newsletter-btn {
+        height: 3.1rem;
+        border: none;
+        border-color: var(--paragraph-color);
+        background: var(--paragraph-color);
+        color: var(--background);
+    }
+
+    #news-letter .newsletter-btn:hover {
+        border: var(--border);
+    }
+    #news-letter .newsletter-btn:active {
+        color: var(--title-color);
+        background: none;
+    }
+
+    #news-letter .sign-up {
+        padding-top: .5rem;
+        line-height: 1.31em;
+        font-family: var(--secondary-sans-font);
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #news-letter .text-field {
+        margin-bottom: .5rem;
+    }
+
+    #news-letter .newsletter-label {
+        width: 69%;
+    }
+    #news-letter .newsletter-btn {
+        width: 29%;
+        margin: 0;
+    }
+
+    @media (max-width: 767.98px) {
+        #news-letter {
+            padding: 48px 24px;
+        }
+        #news-letter .newsletter-label {
+        width: 100%;
+        }
+        #news-letter .newsletter-btn {
+        width: 100%;
+        }
+
+        #news-letter p {
+            font-size: 20px;
+        }
+
+    }
+
+</style>
+
+<div id="news-letter">
+    <h2 class="text-center">Envelope</h2>
+    <p class="text-center">Sign up for my newsletter and get the best publications in your in-box.</p>
+    <div class="d-flex">
+        <form name="contact" method="POST" data-netlify="true">
+            <span class="text-field">
+                <label class="newsletter-label">
+                    <div>Enter your e-mail address</div><div class="input-area">
+                        <input type="email" name="email" placeholder="Your e-mail address" class="input-field" />
+                    </div>
+                </label>
+                <button type="submit" class="newsletter-btn"><span class="sign-up">Sign up</span></button>
+            </span>
+        </form>
+    </div>
+</div>

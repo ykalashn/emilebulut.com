@@ -1,10 +1,25 @@
+:root {
+    --nav-background: black;
+}
+
 .blog-page {
     text-decoration: underline!important;
     opacity: 0.65;
 }
+#blog-hero {
+    border-bottom: var(--border);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-x: hidden;
+}
+
+.hero-text {
+    max-width: calc(100% - 40px);
+}
 
 @media screen and (min-width: 1025px) {
     #highlight,
+    #blog-hero,
     #posts {
         padding: 0;
     }
@@ -12,6 +27,7 @@
     #highlight {
         border-bottom: var(--border);
         padding-bottom: 30px;
+        overflow-x: hidden;
     }
 
     #posts .card-middle {
@@ -31,7 +47,8 @@
         padding-right: 15px;
     }
 
-    .hero-text {
+    .blog-hero .row {
+        padding-left: 48px;
         padding-right: 48px;
     }
 }
@@ -45,15 +62,20 @@ a:hover {
 }
 
 #highlight {
-    padding-top: 130px;
+    padding-top: 30px;
 }
 
-#highlight p, #posts p {
+#highlight p, #blog-hero p, #posts p {
     margin-bottom: 0;
-    font-size: var(--paragraph-font-size);
+    padding-bottom: 2rem;
+}
+
+#blog-hero .row {
+    height: calc(100vh - 65px);
 }
 
 #highlight h3,
+#blog-hero h3,
 #posts h3 {
     color: var(--rubric-color);
     font-family: var(--secondary-sans-font);
@@ -62,7 +84,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 0;
-    margin: 0 20px 10px 0;
+    /* margin: 0 20px 10px 0; */
 }
 
 #highlight h2 {
@@ -72,12 +94,13 @@ a:hover {
     letter-spacing: 1.4px;
 }
 
+#posts .card-img-top {
+    height: calc(200px + 5vh);
+}
 /* POSTS */
 
 #posts {
-    /* padding-top: 30px; */
-    padding-bottom: 30px;
-    /* border-bottom: var(--border); */
+    padding-bottom: 60px;
 }
 
 #posts .card {
@@ -106,7 +129,7 @@ a:hover {
 }
 
 #posts .card-title {
-    font-size: 42px;
+    font-size: 36px;
     line-height: 1.05;
 }
 
@@ -121,17 +144,29 @@ a:hover {
 }
 
 .blog-post-format {
-padding-bottom: 24px;
-color: var(--timestamp-color);
+    padding-bottom: 24px;
+    color: var(--timestamp-color);
+}
+
+.blog-hero {
+    background: var(--nav-background);
+    /* min-height: 100vh; */
+}
+
+blockquote {
+    border-left: var(--border);
+    padding-left: 1em;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
-    #highlight {
-        padding-top: 120px;
+    #highlight, #blog-hero {
+        /* padding-top: 120px; */
+        /* padding-top: calc(20vh - 65px); */
         padding-bottom: 30px;
     }
     
     #highlight h3,
+    #blog-hero h3,
     #posts h3 {
         font-size: 11px;
         margin-bottom: 8px;
@@ -164,27 +199,37 @@ color: var(--timestamp-color);
 
 @media (max-width: 767.98px) {
 
-    #highlight h2,
-    #posts .card-title {
+    #highlight h2 {
         font-size: 36px;
         line-height: 1.1;
         margin-bottom: 8px;
         letter-spacing: 0.2px;
     }
 
-    #highlight {
-        padding-top: 100px;
-        padding-bottom: 30px;
+    #posts .card-title {
+        font-size: 30px;
+        line-height: 1.1;
+        margin-bottom: 8px;
+        letter-spacing: 0.2px;
+    }
+
+    #highlight, #blog-hero {
+        padding-bottom: 0px;
     }
 
     #highlight p {
-        padding-bottom: 0;
+        padding-bottom: 24px;
     }
 
     #highlight img,
+    /* #blog-hero img, */
     #posts .card-img-top {
-        padding-bottom: 24px;
+        padding-bottom: 1rem;
         border-radius: 0;
+    }
+
+    #blog-hero .row {
+        height: 100%;
     }
     
     .borderline {
@@ -196,7 +241,6 @@ color: var(--timestamp-color);
         font-size: 0.6rem;
         margin-bottom: 8px;
     }
-    
     /* POSTS */
     
     #posts {
@@ -209,10 +253,6 @@ color: var(--timestamp-color);
         border-radius: 0;
         border-top: var(--border);
     }
-    
-    /* #posts img {
-        min-height: calc(150px + 20vw);
-    } */
 
     #posts .card-body {
         padding: 0;
@@ -221,10 +261,6 @@ color: var(--timestamp-color);
     
     #posts .card-middle {
         border: none;
-    }
-
-    .borderline {
-        display: none;
     }
 }
 

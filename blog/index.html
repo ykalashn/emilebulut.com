@@ -34,37 +34,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="../js/handlebars.min.js"></script>
 <script id="templateHB" type="text/x-handlebars-template">
-    <section id="highlight" class="container-lg">
-        <div class="row justify-content-md-center">
-            <div class="col-12 col-md-5 d-flex align-items-md-center order-2 order-md-1 hero-text">
-                <div>
-                    <h3>{{tag}}</h3>
-                    <h2><a href="{{link}}">{{title}}</a></h2>
-                    <p>{{description}}</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-7 order-1 order-md-2">
-                <a href="{{link}}"><img src="{{image}}" class="img-fluid" alt="{{alt}}"></a>
-            </div>
-        </div>
-    </section>
     {{#each posts}}
-    <section id="posts" class="container-lg">
-        <!-- <div class="row justify-content-md-center"> -->
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <a href="{{this.link}}"><img class="card-img-top cover" src="{{this.image}}" alt="{{this.alt}}"></a>
-                    <div class="card-body">
+        {{#if featured}}
+        <section id="highlight" class="container-lg">
+            <div class="row justify-content-md-between">
+                <div class="col-12 col-md-5 d-flex align-items-md-center order-2 order-md-1 hero-text">
+                    <div>
                         <h3>{{this.tag}}</h3>
-                        <h2 class="card-title"><a href="{{this.link}}">{{this.title}}</a></h2>
-                        <p class="card-text">{{this.description}}</p>
+                        <h2><a href="{{link}}">{{this.title}}</a></h2>
+                        <p>{{this.description}}</p>
+                        <span class="blog-post-format">{{this.date}}</span>
                     </div>
                 </div>
+                <div class="col-12 col-md-6 order-1 order-md-2">
+                    <a href="{{this.link}}"><img src="{{this.image}}" class="img-fluid" alt="{{this.alt}}"></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        {{/if}}
     {{/each}}
+        <section id="posts" class="container">
+            <div class="row">
+                {{#each posts}}
+                    {{#unless featured}}
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <a href="{{this.link}}"><img class="card-img-top cover" src="{{this.image}}" alt="{{this.alt}}"></a>
+                            <div class="card-body">
+                                <h3>{{this.tag}}</h3>
+                                <h2 class="card-title"><a href="{{this.link}}">{{this.title}}</a></h2>
+                                <p class="card-text">{{this.description}}</p>
+                                <span class="blog-post-format">{{this.date}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{/unless}}
+                {{/each}}
+            </div>
+        </section>
 </script>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/blog.css">

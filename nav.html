@@ -2,20 +2,22 @@
 <style>
     /* HEADER */
     header {
+      background: var(--nav-background);
       -webkit-transition: all .5s;
       transition: all .5s;
       height: 65px;
-      position: absolute;
+      position: sticky;
       z-index: 100;
       width: 100%;
       text-align: center;
+      border-bottom: var(--border);
     }
 
     #navbar nav ul {
       display: inline-block;
       padding-left: 0;
       list-style: none;
-      padding: 20px;
+      /* padding: 10px; */
       margin-bottom: 0;
       -webkit-transition: all .5s;
       transition: all .5s;
@@ -57,7 +59,7 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="navbar" class="navbar-fixed-top">
+<header id="navbar">
     <nav>
         <ul>
           <li><a href="https://emilebulut.com/" class="home-page">Home</a></li>
