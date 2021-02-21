@@ -1,0 +1,12 @@
+:root {
+    --background: #f9f9f9;
+    --nav-color: #111;
+    --nav-background: var(--background);
+    --border: 1px solid rgb(229, 229, 229);
+    --title-color: #000;
+    --secondary-color: #333;
+    --paragraph-color: #000;
+    --rubric-color: #333;
+    --timestamp-color: #333;
+    --secondary-sans-color: #333;
+}
