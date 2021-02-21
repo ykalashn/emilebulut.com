@@ -1,8 +1,18 @@
 const context = {  
     posts: [
         {
+            'MW845Vdb': 1,
+            image: "https://emilebulut.com/blog/images/a-vegan-review-of-mosquito.jpg",
+            alt: 'A photo of a mosquito',
+            tag: 'Review',
+            title: 'A Vegan Review of Mosquito',
+            description: '“The Butcher Dreams” screams an introspective look at a human being faced with the brutality of animal cruelty.',
+            link: 'https://emilebulut.com/blog/2021/a-vegan-review-of-mosquito.html',
+            date: 'February 21, 2021',
+            photoBy: 'Photo by Yogesh Pedamkar via Unsplash',
+        },
+        {
             'ZPejMr2v': 1,
-            featured: true,
             image: "https://emilebulut.com/blog/images/The-Death-of-Language-in-Johnny-23.jpg",
             alt: '',
             tag: 'Review',
@@ -14,7 +24,6 @@ const context = {
         },
         {
             'qY2LXYZV': 1,
-            featured: false,
             image: 'https://emilebulut.com/blog/images/what-is-the-Emil-Bulut-and-who-is-this-website.jpg',
             alt: '',
             tag: 'Feature',
