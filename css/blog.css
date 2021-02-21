@@ -86,11 +86,10 @@ a:hover {
     color: var(--rubric-color);
     font-family: var(--secondary-sans-font);
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 0;
-    /* margin: 0 20px 10px 0; */
 }
 
 #highlight h2 {
@@ -144,6 +143,12 @@ blockquote {
 }
 
 @media (max-width: 767.98px) {
+
+    #highlight h3,
+    #blog-hero h3 {
+    font-size: 12px;
+    font-weight: 400;
+    }
 
     #highlight h2 {
         font-size: 27px;
