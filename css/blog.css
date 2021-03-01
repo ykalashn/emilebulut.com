@@ -3,9 +3,10 @@
 }
 
 .blog-page {
-    text-decoration: underline!important;
-    opacity: 0.65;
+    color: var(--accent-color)!important;
+    text-decoration: none;
 }
+
 #blog-hero {
     border-bottom: var(--border);
     padding-top: 2rem;
@@ -21,6 +22,14 @@
     border-bottom: var(--border);
     padding-bottom: 2rem;
     overflow-x: hidden;
+    position: relative;
+}
+
+#highlight:first-child {
+    /* border-top: var(--border); */
+    border-top-width: 2px;
+    /* margin-top: 20vh; */
+    border-top-color: var(--title-color);
 }
 
 #highlight:last-child {
@@ -52,6 +61,10 @@
     }
 }
 
+#highlight:first-child {
+    margin-top: calc(2rem + 65px);
+}
+
 #highlight h2,
 a,
 a:hover {
@@ -71,14 +84,14 @@ a:hover {
     overflow: hidden;
 }
 
-
 #highlight p, #blog-hero p {
     margin-bottom: 0;
     padding-bottom: 2rem;
 }
 
 #blog-hero .row {
-    min-height: calc(100vh - 65px);
+    padding-top: 65px;
+    min-height: 100vh;
 }
 
 #highlight h3,
@@ -90,10 +103,6 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 0;
-}
-
-#highlight h2 {
-    margin-bottom: 20px;
 }
 
 .blog-post-image {
@@ -113,7 +122,7 @@ a:hover {
 }
 
 blockquote {
-    border-left: var(--border);
+    border-left: var(--nav-border);
     border-width: 2px;
     padding-left: 1rem;
 }
@@ -132,7 +141,6 @@ blockquote {
     #highlight h2 {
         font-size: 26px;
         line-height: 1.05;
-        margin-bottom: 7px;
         letter-spacing: normal;
         font-weight: bolder;
     }
@@ -143,26 +151,20 @@ blockquote {
 }
 
 @media (max-width: 767.98px) {
-
-    #highlight h3,
-    #blog-hero h3 {
-    font-size: 12px;
-    font-weight: 400;
-    }
-
-    #highlight h2 {
-        font-size: 27px;
-        line-height: 1.1;
-        margin-bottom: 1rem;
-        letter-spacing: 1px;
-    }
-
-    #highlight p, #blog-hero p {
-        margin-bottom: 0;
+    #highlight:first-child {
+        margin-top: 65px;
     }
 
     #highlight, #blog-hero {
         padding-bottom: 0px;
+    }
+    #blog-hero {
+        margin-top: 65px;
+    }
+
+    #blog-hero .row {
+        padding-top: 0px;
+        min-height: 100%;
     }
 
     #highlight .img-fluid {
@@ -177,9 +179,5 @@ blockquote {
 
     #blog-hero .row {
         height: 100%;
-    }
-    
-    #highlight h3 {
-        margin-bottom: 1rem;
     }
 }

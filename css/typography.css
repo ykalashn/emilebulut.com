@@ -115,11 +115,15 @@ blockquote p {
 }
 
 #highlight h2 {
-  font-size: 30px;
+  font-size: 34px;
   line-height: 1.05;
   margin-bottom: 7px;
   letter-spacing: normal;
   font-weight: bolder;
+}
+
+#highlight h3 {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 1025px) {
@@ -135,8 +139,26 @@ blockquote p {
   }
 
   #highlight h2 {
-    font-size: 26px;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    margin-bottom: 0;
   }
+
+  #highlight h3,
+  #blog-hero h3 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  #highlight p, #blog-hero p {
+    margin-bottom: 0;
+  }
+
+  #highlight p {
+    line-height: 1.2;
+  }
+
 }
 
 @media (max-width: 569.98px) {

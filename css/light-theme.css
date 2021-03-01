@@ -2,7 +2,8 @@
     --background: #f9f9f9;
     --nav-color: #111;
     --nav-background: var(--background);
-    --border: 1px solid rgb(229, 229, 229);
+    --border: 1px solid var(--nav-color);
+    --nav-border: 1px solid #e2e2e2;
     --title-color: #000;
     --secondary-color: #333;
     --paragraph-color: #000;

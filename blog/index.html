@@ -40,7 +40,8 @@
                 <div class="col-12 col-md-5 order-md-1 hero-text">
                     <div>
                         <h3>{{this.tag}}</h3>
-                        <a href="{{this.link}}"><h2>{{this.title}}</a>&nbsp;&nbsp;<span class="p"><a href="{{this.link}}">{{this.description}}</a></span></h2>
+                        <h2><a href="{{this.link}}">{{this.title}}</a></h2>
+                        <p>{{this.description}}</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-7 order-md-2">
@@ -52,12 +53,14 @@
 </script>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/blog.css">
+<link rel="stylesheet" href="../css/light-theme.css">
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
 
 <div id="blogposts"></div>
+<div id="newsletter" class="d-md-none"></div>
 
 <div id="footer-placeholder"></div>
 
