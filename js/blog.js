@@ -1,6 +1,17 @@
 const context = {  
     posts: [
         {
+            'jYZPfai6': 1,
+            image: 'https://emilebulut.com/blog/images/cutting-up-the-fifty-year-sword.jpg',
+            alt: '',
+            tag: 'Review',
+            title: 'Cutting up The Fifty Year Sword',
+            description: 'Danielewski tries to muddle the waters of traditional storytelling by narrating from the point of view of communal memory.',
+            link: './2021/cutting-up-the-fifty-year-sword.html',
+            date: 'March 8, 2021',
+            photoBy: 'Photo by Sigmund via Unsplash',
+        },
+        {
             'MW845Vdb': 1,
             image: "https://emilebulut.com/blog/images/a-vegan-review-of-mosquito.jpg",
             alt: 'An image of a mosquito.',

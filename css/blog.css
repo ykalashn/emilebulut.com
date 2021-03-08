@@ -117,9 +117,9 @@ a:hover {
     color: var(--timestamp-color);
 }
 
-.blog-hero {
+/* .blog-hero {
     background: var(--nav-background);
-}
+} */
 
 blockquote {
     border-left: var(--nav-border);
