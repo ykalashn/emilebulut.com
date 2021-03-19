@@ -1,5 +1,5 @@
 :root {
-    --nav-background: black;
+    --nav-background: #121212;
 }
 
 .blog-page {
@@ -13,10 +13,6 @@
     padding-bottom: 2rem;
     overflow-x: hidden;
 }
-
-/* .hero-text {
-    max-width: calc(100% - 40px);
-} */
 
 #highlight {
     border-bottom: var(--border);
@@ -116,7 +112,6 @@ a:hover {
     padding-bottom: 2rem;
     color: var(--timestamp-color);
 }
-
 /* .blog-hero {
     background: var(--nav-background);
 } */
@@ -160,6 +155,7 @@ blockquote {
     }
     #blog-hero {
         margin-top: 65px;
+        border-bottom: none;
     }
 
     #blog-hero .row {

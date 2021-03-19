@@ -1,19 +1,19 @@
 @import "typography.css";
 
 :root {
-  --background: #000;
+  --background: #121212;
   --nav-color: #f5f5f7;
   --nav-background: var(--background);
   --border: 1px solid #47484c;
   --nav-border: 1px solid #47484c;
   --title-color: #fff;
   --secondary-color: #e8eaed;
-  --paragraph-color: rgba(255, 255, 255, 0.8);
+  --paragraph-color: #ffffff;
   --rubric-color: #9aa0a6;
   --timestamp-color: #9aa0a6;
   --accent-color: red;
   --default-paragraph-font: 'Fraunces', Georgia, serif;
-  --paragraph-font-size: 21px;
+  --paragraph-font-size: 22px;
   --secondary-title-font-size: 2.24rem;
   --default-primary-font: 'FreigDispProBook-Regular', 'Fraunces', Georgia, serif;
   --special-title-font: 'Freig-I', 'Fraunces', Georgia, serif;
@@ -58,7 +58,7 @@ h2 a:hover {
 #contact,
 #blog,
 #blog-single-post {
-  padding-top: 60px;
+  padding-top: 24px;
   padding-bottom: 80px;
 }
 
@@ -170,7 +170,6 @@ h2 a:hover {
   padding-left: 24px;
 }
 
-
 /*---------------------------------------
    Mobile Responsive
 -----------------------------------------*/
@@ -233,7 +232,7 @@ h2 a:hover {
   #about, #blog-page,
   #contact,
   #blog, #blog-single-post {
-    padding-top: 60px;
+    padding-top: 2rem;
     padding-bottom: 60px;
   }
 
