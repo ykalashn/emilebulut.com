@@ -7,7 +7,7 @@ const context = {
             tag: 'Review',
             title: 'How “A Rose for Emily” Weaponizes Nostalgia',
             description: "The story doesn’t just create a feeling of nostalgia but also explores the pitfalls of pining for lost things and not letting go.",
-            link: './2021/how-a-rose-for-emily-weaponizes-nostalgia.html',
+            link: './2021/how-a-rose-for-emily-weaponizes-nostalgia/',
             date: 'March 19, 2021',
             photoBy: 'Photo by Library of Congress on Unsplash',
         },
