@@ -1,6 +1,17 @@
 const context = {  
     posts: [
         {
+            'c4iWbmvY': 1,
+            image: 'https://emilebulut.com/blog/images/the-comic-duel-of-the-belletrists.jpg',
+            alt: 'An envelope, a pen, a crystal, and a branch.',
+            tag: 'Review',
+            title: 'The Comic Duel of the Belletrists',
+            description: `Nafissa Thompson-Spires’ epistolary masterpiece “Belles Lettres” explores middle-class African American academic identity through humor.`,
+            link: './2021/the-comic-duel-of-the-belletrists.html/',
+            date: 'May 15, 2021',
+            photoBy: 'Photo by Joanna Kosinska on Unsplash',
+        },
+        {
             'YczDqJW8': 1,
             image: 'https://emilebulut.com/blog/images/how-a-rose-for-emily-weaponizes-nostalgia.jpg',
             alt: '',
