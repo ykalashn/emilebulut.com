@@ -1,6 +1,17 @@
 const context = {  
     posts: [
         {
+            'Q9g72uni': 1,
+            image: 'https://emilebulut.com/blog/images/who-gets-to-tell-stories.jpg',
+            alt: 'An ant.',
+            tag: 'Review',
+            title: 'Who gets to tell stories?',
+            description: `I believe this is the sentiment of Le Guin as well; push the limits of storytelling and question who gets to be the narrator of stories.`,
+            link: './2021/who-gets-to-tell-stories.html/',
+            date: 'May 20, 2021',
+            photoBy: 'Photo by Peter F. Wolf on Unsplash',
+        },
+        {
             'c4iWbmvY': 1,
             image: 'https://emilebulut.com/blog/images/the-comic-duel-of-the-belletrists.jpg',
             alt: 'An envelope, a pen, a crystal, and a branch.',
