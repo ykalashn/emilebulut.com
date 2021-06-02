@@ -3,11 +3,6 @@
     src: url('../fonts/FreigDisProLigIta.ttf');
 }
 
-/* @font-face {
-    font-family: 'Freig';
-    src: url('../fonts/FreigDisProLig.ttf');
-} */
-
 @font-face {
   font-family: 'FreigDispProBook-Regular';
   src: url('../fonts/FreigDispProBook-Regular.woff');
@@ -114,6 +109,27 @@ blockquote p {
   text-decoration: none;
 }
 
+.read-more-link {
+  color: var(--title-color);
+  font-family: var(--secondary-sans-font);
+  opacity: 0.6;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: normal;
+  border-bottom: solid 1px var(--title-color);
+}
+
+.read-more-link:hover {
+  text-decoration: none;
+  font-family: var(--secondary-sans-font);
+  color: var(--title-color);
+  opacity: 1;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: normal;
+  border-bottom: solid 1px var(--title-color);
+}
+
 #highlight h2 {
   font-size: 34px;
   line-height: 1.05;
@@ -166,7 +182,7 @@ blockquote p {
     font-size: 22px;
     line-height: 30px;
   }
-  
+
   .blog-hero h1 {
     font-size: 40px;
     line-height: 1.1em;
