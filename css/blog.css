@@ -60,18 +60,18 @@
 }
 
 #highlight h2,
-a,
-a:hover {
+a {
     color: var(--title-color);
     font-family: var(--default-primary-font);
 }
+
 
 #highlight {
     padding: 2rem 0;
 }
 
 #highlight .img-fluid {
-    height: 522px;
+    height: 530px;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -140,7 +140,7 @@ blockquote {
     }
     
     #highlight .img-fluid {
-        height: 340px;
+        height: 450px;
     }
 }
 

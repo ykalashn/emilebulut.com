@@ -53,13 +53,11 @@ h2 a:hover {
   color: inherit;
 }
 
-#about,
 #blog-page,
-#contact,
 #blog,
 #blog-single-post {
-  padding-top: 24px;
-  padding-bottom: 80px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .parallax-section {
