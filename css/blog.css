@@ -83,6 +83,10 @@ a:hover {
     padding-bottom: 1rem;
 }
 
+#blog-hero p {
+    padding-bottom: 2rem;
+}
+
 #blog-hero .row {
     padding-top: 65px;
     min-height: 100vh;
