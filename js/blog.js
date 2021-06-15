@@ -9,7 +9,7 @@ const context = {
             description: `The metanarratives are baked into each other for the reader to wade through.`,
             link: './2021/you-are-reading-a-book.html',
             date: 'June 15, 2021',
-            photoBy: 'Photo by Carlos de Toro @carlosdetoro on Unsplash',
+            photoBy: 'Photo by Carlos de Toro on Unsplash',
         },
         {
             'Cyt33Ckm': 1,
