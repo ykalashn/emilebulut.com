@@ -2,8 +2,8 @@
     --background: #f9f9f9;
     --nav-color: #111;
     --nav-background: var(--background);
-    --border: 1px solid #e2e2e2;
-    --nav-border: 1px solid #e2e2e2;
+    --border: 0.3px solid black;
+    --nav-border: 0.3px solid black;
     --title-color: #000;
     --secondary-color: #333;
     --paragraph-color: #000;
