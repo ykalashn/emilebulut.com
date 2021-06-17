@@ -1,6 +1,17 @@
 const context = {  
     posts: [
         {
+            'GcQ7hC5B': 1,
+            image: 'https://emilebulut.com/blog/images/the-search-for-meaning.jpg',
+            alt: 'Alaskan wilderness with a stream, ever-greens, and clouds.',
+            tag: 'Review',
+            title: `The search for meaning`,
+            description: `The book alternates between different tools of non-fiction writing such as describing, quoting, interviewing, reminiscing, and speculating.`,
+            link: './2021/the-search-for-meaning.html',
+            date: 'June 17, 2021',
+            photoBy: 'Photo by Dylan Taylor on Unsplash',
+        },
+        {
             'ex23ftb4': 1,
             image: 'https://emilebulut.com/blog/images/you-are-reading-a-book.jpg',
             alt: 'Man standing in a hall made of mirrors.',
