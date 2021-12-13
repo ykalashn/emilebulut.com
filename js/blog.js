@@ -80,7 +80,7 @@ const context = {
         {
             'MW845Vdb': 1,
             image: "https://emilebulut.com/blog/images/a-vegan-review-of-mosquito.jpg",
-            alt: 'An image of a mosquito.',
+            alt: 'Mosquito.',
             tag: 'Review',
             title: 'A Vegan Review of Mosquito',
             description: '“The Butcher Dreams” screams an introspective look at a human being faced with the brutality of animal cruelty.',
@@ -91,7 +91,7 @@ const context = {
         {
             'ZPejMr2v': 1,
             image: "https://emilebulut.com/blog/images/The-Death-of-Language-in-Johnny-23.jpg",
-            alt: 'An image of a person holding a book with fire in their hands.',
+            alt: 'Person holding a book with fire in their hands.',
             tag: 'Review',
             title: 'The Death of Language in “Johnny 23”',
             description: 'Language is dead — long live language!',

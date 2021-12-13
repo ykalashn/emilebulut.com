@@ -7,8 +7,6 @@ html, body {
 }
 
 .works-page {
-    /* text-decoration: underline!important;
-    opacity: 0.65; */
     color: var(--accent-color)!important;
     text-decoration: none;
 }

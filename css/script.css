@@ -1,0 +1,63 @@
+:root {
+    --background: #eeeeee;
+    --nav-color: #000;
+    --nav-background: var(--background);
+    --border: 1px solid #47484c;
+    --nav-border: 1px solid #47484c;
+    --title-color: #121212;
+    --secondary-color: #000;
+    --paragraph-color: #000000;
+    --rubric-color: #9aa0a6;
+    --timestamp-color: #9aa0a6;
+    --accent-color: red;
+    --default-paragraph-font: 'Courier-10', 'Courier New', Courier, monospace;
+}
+
+p {
+    margin-bottom: 1.5em;
+    padding-right: 5%;
+    line-height: 1.1;
+    font-size: 21px;
+    letter-spacing: -.03em;
+}
+
+.screen-title, .the-end {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.the-end {
+    font-weight: bold;
+}
+
+.character {
+      margin-left: 30%;
+      margin-bottom: 0;
+}
+
+.parenthetical {
+    margin-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.dialogue {
+      display: block;
+      margin-left: 15%;
+      padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    p {
+        padding-right: 0;
+        font-size: 16px;
+    }
+    .character {
+        margin-left: 40%;
+    }
+    .parenthetical {
+        margin-left: 25%;
+        padding-right: 25%;
+    }
+}
