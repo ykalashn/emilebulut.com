@@ -10,7 +10,6 @@
     --rubric-color: #9aa0a6;
     --timestamp-color: #9aa0a6;
     --accent-color: red;
-    --default-paragraph-font: 'Courier-10', 'Courier New', Courier, monospace;
 }
 
 p {
@@ -19,6 +18,7 @@ p {
     line-height: 1.1;
     font-size: 21px;
     letter-spacing: -.03em;
+    font-family: 'courier_10_pitch', Courier, monospace;
 }
 
 .screen-title, .the-end {
