@@ -13,21 +13,27 @@
 }
 
 p {
-    margin-bottom: 1.5em;
-    padding-right: 5%;
-    line-height: 1.1;
+    margin-bottom: 1.1em;
+    line-height: 1;
     font-size: 21px;
     letter-spacing: -.03em;
     font-family: 'courier_10_pitch', Courier, monospace;
 }
 
+.blog-post-des {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+}
 .screen-title, .the-end {
     text-decoration: underline;
     text-align: center;
 }
-
+br {
+    line-height: 0;
+}
 .the-end {
     font-weight: bold;
+    padding-top: 1em;
 }
 
 .character {
@@ -50,8 +56,11 @@ p {
 }
 
 @media (max-width: 768px) {
-    p {
+    .blog-post-des {
         padding-right: 0;
+        padding-left: 0;
+    }
+    p {
         font-size: 16px;
     }
     .character {
