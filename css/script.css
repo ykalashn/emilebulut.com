@@ -28,9 +28,6 @@ p {
     text-decoration: underline;
     text-align: center;
 }
-br {
-    line-height: 0;
-}
 .the-end {
     font-weight: bold;
     padding-top: 1em;
